@@ -1,0 +1,22 @@
+{
+  "name": "DNPop",
+  "version": "0.1.0",
+  "summary": "A short description of DNPop.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/DoNewsCode/DNPop",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "陈金铭": "chenjinming@donews.com"
+  },
+  "source": {
+    "git": "https://github.com/DoNewsCode/DNPop.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DNPop/Classes/**/*"
+}

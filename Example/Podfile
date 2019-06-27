@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'DNPop_Example' do
+  pod 'DNPop', :path => '../'
+
+  target 'DNPop_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
