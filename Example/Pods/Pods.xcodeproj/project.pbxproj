@@ -7,53 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01B72EE51E08552AC1FD5BDA27ED9B32 /* DNCustomAlertBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9607A6B169C92FBECAA1A49526FF1E /* DNCustomAlertBaseView.m */; };
+		0253B51B0DFB5EC740D7639AFD4FD9B3 /* DNPopStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EC6D2AAF860CA22A5F40B32E915450D /* DNPopStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03EACDF6FBC98028F06186CAE63BF84C /* Pods-DNPop_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAA86EBEC973C51292F9E9B03448DA /* Pods-DNPop_Tests-dummy.m */; };
-		06B8072C3DDF9E8501CB5DD6203A227E /* DNCustomAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A342ABB7ED6533BA205CCF6794CBDB1 /* DNCustomAlertController.m */; };
-		19D832A99F26977A538512ACE2AA027A /* DNBaseAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C7C3D65F97F95F723CDA6CB551176D /* DNBaseAlertViewController.m */; };
+		10CF9243E7E600D161DAA110F1B0B8DF /* DNPop.m in Sources */ = {isa = PBXBuildFile; fileRef = 762EEEBEA19AD70001BF90AB57433241 /* DNPop.m */; };
+		1D16F1FF0976E634D2111E50DCBEE1E3 /* DNPopOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 83A2ECB4FBF87008338B6D62C6E2B8C4 /* DNPopOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D2FCEEA7363856810DB0D2E6716DF38 /* DNPopOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 48098C4D816A6AC4019AEA9E03F593F9 /* DNPopOperationQueue.m */; };
 		23C8E2D72E16B03D1C7AAB3291E27EDA /* Pods-DNPop_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A035742D1A109CBB07DEAE913E5AA33 /* Pods-DNPop_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28E3B69EEF028040A3FE69B7A62FE2B0 /* DNCustomAlertMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6911F6E23BFD23A7167A17B7C7F29409 /* DNCustomAlertMainView.m */; };
-		2B2B5D927F1DB6B0399DFE418F07B7D7 /* DNAlertOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D002D0806550C962E485646433DCB7AE /* DNAlertOperation.m */; };
-		31B5CBBDEA4EE61A797DBAA0C9C029B8 /* DNAlertManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C544322FD06A3A3755973B210DB0BA12 /* DNAlertManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3567271A964DA50D8752D2DF8D98FE0B /* DNAlertOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C3AB638C84CB0D1C2E9B56F222DEBD9 /* DNAlertOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		388CBE1A9151D6E8513DB8E421830A4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		39FCB7D4E07EC434E4431B7C150873BF /* DNPop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AF9477AAA7CB0BCF4504DDC7130E72 /* DNPop-dummy.m */; };
-		40C41AFD20F6C7196015B620A826FA12 /* DNCustomAlertAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B031C1625BC4D385334E4BDADA58B0 /* DNCustomAlertAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40E8DCA27183B17003D260EDC4C626A0 /* DNCustomAlertActionSheetDismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FBA477169390B272BD2F5E3BFCB4DE /* DNCustomAlertActionSheetDismissAnimator.m */; };
-		57CF2FFD902C6E22500841B6D4408AC4 /* DNCustomAlertDismissAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = FFE579D20D32FBE515C2F4EC447ADC73 /* DNCustomAlertDismissAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2490C2A0FA85EBE34AAD0F45CD816E92 /* DNPopActionSheetPresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6711B2FAE5EF312DE8247C4AB3CAABDF /* DNPopActionSheetPresentAnimator.m */; };
+		290CC6D96EEB0F6D979C798147328AC2 /* DNPopActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B7C3A5326AB044516A533611C961D /* DNPopActionSheetView.m */; };
+		293D18EECAC1C080E558B43D40AF5802 /* DNPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0825CE8853FC1883094B6C7746EB6A30 /* DNPopViewController.m */; };
+		31FEA0F8572FFB53F41E748919528FCD /* DNPopAlertPresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD47BBA9E5014E303EDEB86A4B466DE /* DNPopAlertPresentAnimator.m */; };
+		488EBF876979F98C3A130AAD706608D2 /* DNPopPresentBaseAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 17594F17596640F98BC5BD0221763C0F /* DNPopPresentBaseAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50A60EF9D09276BC87E491413039F451 /* DNPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB17E53F80C363C511BBFD8A87C91CD /* DNPopView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55B4A08880B4C096BD38EF7AEF6F02B3 /* DNPopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C441B6E06140E67A9278A3060652D0 /* DNPopItem.m */; };
+		5C6B2A4632374B5E0CB9BB6F8F6DD939 /* DNPopActionSheetPresentAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4137C5571A9AD2F0DA8E797538AB92D5 /* DNPopActionSheetPresentAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60C1D0C7D88BDB05B15D62980E30399B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		61D3708CE73FDC260864A189CE367547 /* DNCustomAlertBaseItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F879AB1EF04097E803A8FA50543E75 /* DNCustomAlertBaseItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		637E11E94420FDBD4FE255E7E1B192E2 /* DNCustomAlertActionSheetView.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D4393B1E6CC4B9EACA23D512D7306C /* DNCustomAlertActionSheetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64B546E65DF97E10CDDAEFB7B1BC070E /* DNCustomAlertPresentAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = A5FDFBCD8C4424737276DF88CC8284BC /* DNCustomAlertPresentAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		660BEB9B22C4D24F00504A92 /* DNProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 660BEB9922C4D24F00504A92 /* DNProgressHUD.h */; };
-		660BEB9C22C4D24F00504A92 /* DNProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 660BEB9A22C4D24F00504A92 /* DNProgressHUD.m */; };
-		6A4FAD01905F2A575E197ED941691BB8 /* DNCustomAlertBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2943559639BCD7651DBFB27B654C078F /* DNCustomAlertBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79E1CA26E523F7EBA0D335321E2CBF41 /* DNCustomAlertItem.h in Headers */ = {isa = PBXBuildFile; fileRef = DAD1A7BA29D8E71DB9B813823274F649 /* DNCustomAlertItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		661A898975D5FE1DEC0884A05A525034 /* DNPopItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E9A13C46C1DE2D6A07D470993E752DC /* DNPopItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E1A702191F79D403205D1F185F49B7B /* DNPopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DD141897D48E9CA1C6500C62DCDDB6F8 /* DNPopViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74E67E952CDF7FA9F2D5C7816DA568AD /* DNPopAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB4A177605F6DC4E576F3AAE90B0342 /* DNPopAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76587F5CC5BD54F9142FE4FE288F6676 /* DNPopAlertDismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FB64BBD705B9473B624EBE70765EA6 /* DNPopAlertDismissAnimator.m */; };
 		7F187E646343E3CAA4039EBC8AF41AD4 /* Pods-DNPop_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4C5279C462A365D626657029E147A2 /* Pods-DNPop_Example-dummy.m */; };
-		7F817E87E5EEB6C70ED78E60A8FA6693 /* DNCustomAlertPresentBaseAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 60D989E21179532F799A46AE302DD989 /* DNCustomAlertPresentBaseAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82DCC487A440F070D00311DD6DD6E012 /* DNCustomAlertActionSheetPresentAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 30CC2542BC79D358EAD182BF963D4290 /* DNCustomAlertActionSheetPresentAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87E929B4F89857641A1ADE85D331459B /* DNCustomAlertDismissBaseAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 14544140A4C90129931751BBCCE7D818 /* DNCustomAlertDismissBaseAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8967874FE501BBBEEA770FB25687A242 /* DNPop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8CDDE472B3017D860CD02FE982B7CC4 /* DNPop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8FA63B206F6B804889DFAB5BD926DBE9 /* DNCustomAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 459A8E3893C346C6B90FBF6451218565 /* DNCustomAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8FFC23780D25ACD41976FB2DF57359B3 /* DNCustomAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 160CDBAAAA7A3252BC6D30C60A518B7C /* DNCustomAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		971B430227D7612597E302493FFDB53A /* DNCustomAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F195503EA18F27E9AE72583DC805558 /* DNCustomAlertAction.m */; };
-		A0FDB484D9710B0DF7314B34537FF3E4 /* DNCustomAlertActionSheetDismissAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 084D60FBCACAEEFA023FA6645B5798C3 /* DNCustomAlertActionSheetDismissAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A65297E21FFA2B7AAE6499BEC0E22ED3 /* DNCustomAlertDismissBaseAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE43B2817B6E164D75F0EA85B635DC7 /* DNCustomAlertDismissBaseAnimator.m */; };
-		A9149FAB240BA50046ED65ADD843B39E /* DNCustomAlertDismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = D528EEEA98ABFCCB2CF8DE056E14F560 /* DNCustomAlertDismissAnimator.m */; };
-		AA9637E334EED08D3E47B2EBD74FD7A2 /* DNCustomAlertActionSheetPresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B4F351C53D34576A2F44FD3D297051 /* DNCustomAlertActionSheetPresentAnimator.m */; };
-		AD6605FDF44E477D9090EB29E3FD3108 /* DNCustomAlertItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CC24D982AC5FFE6F0D7005E844773CEC /* DNCustomAlertItem.m */; };
-		BF2119F1FB4DE1EDB4D3584B70E69AD5 /* DNBaseAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D83219852707CDCA5F13D08DFDFBE4C3 /* DNBaseAlertViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA36FC89199641D2024702A766196F7A /* DNAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C12482AA780707A612DC173CB551E7 /* DNAlertManager.m */; };
-		D095C1A6E1A0211793A7518E9453F5DA /* DNCustomAlertActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5E23024DD5111BA19DF26857CA782A /* DNCustomAlertActionSheetView.m */; };
+		81269A7201B1FB2861665C7AD7895E44 /* DNPopAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 074AB4486261885300AC2440384F0847 /* DNPopAction.m */; };
+		87B48501D13317A5385F8DA4EF10461A /* DNPopAlertDismissAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 927C59DB7A4C41C78A558C00BAAB311E /* DNPopAlertDismissAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87F565208EA7F1FA970A74445885E6ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		94533D1C6F70BC08B2AA696BF62CF977 /* DNPop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E533E17A0F8308E530B5EC9DB0400F /* DNPop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99C9D9458FD2815A8B25D2F359964D20 /* DNPopAlertPresentAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 217412763349D8793140EA1B6D5550E4 /* DNPopAlertPresentAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE1CE58A45652FFBFAADCD49EDF3EEF7 /* DNPopAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 218CF3FBA416737DA43003BB8E217C97 /* DNPopAlertView.m */; };
+		B0024A6B921D8261799020748F06252F /* DNPopDismissBaseAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E92CDB85F11D3380C81959CB2D4BBD6B /* DNPopDismissBaseAnimator.m */; };
+		B1090CBFDCA3A59E47C1F45FE6BFF623 /* DNPopPresentBaseAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E28FF5FACC5644A154A4FC3FDCA400FE /* DNPopPresentBaseAnimator.m */; };
+		B21B83AAB0DFA643AF5036C68B9A2C8B /* DNPopAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = D50CA2DB2BA872E57E107D54B09E876A /* DNPopAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BABDB94B0026EFBFB73C99AA0C5DA153 /* DNPopStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A708F8A8475BA1797DF95F1DCB60CB89 /* DNPopStyle.m */; };
+		BB52F51FB9E9AF9A190E49CD3229EEE7 /* DNPopActionSheetView.h in Headers */ = {isa = PBXBuildFile; fileRef = 28556ED79CC429A728F5691395CF84EC /* DNPopActionSheetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8C54FB7F356F92A255E5899474DA586 /* DNPopDismissBaseAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 764952308E7D23B1BA9A5EFC8FBE1A20 /* DNPopDismissBaseAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBE2C917F435E8E704A24AB7E8EE87E4 /* DNPop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8285530E3DE7C8604D816A9A5503A108 /* DNPop-dummy.m */; };
+		CD01937CE68D3593C4A2BECBFEDF010E /* DNPopActionSheetDismissAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = E3A549B3B5B385249DCEF9BC09C440AA /* DNPopActionSheetDismissAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF8B530B2F73A711C3D1E4D9D5327332 /* DNPopActionSheetDismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE7DC9316B38267D054AB563F8858B8 /* DNPopActionSheetDismissAnimator.m */; };
+		D52A6175D41CF6C424F5DD88C5FD8ED6 /* DNPopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F17EB1E5026EA7EDE4BA4DDE556BA8 /* DNPopOperation.m */; };
+		D5386028D2EF7FB7AD8AF6026A63E163 /* DNPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0410B22E669868EFA08E4DE88CB7DF /* DNPopView.m */; };
 		D692103C255C5B583718F482CD1908DE /* Pods-DNPop_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7EC47E83E43EFED145BB84BD3D3476 /* Pods-DNPop_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D88E1BAFF8181838C5635AF82DF27A5E /* DNCustomAlertPresentBaseAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 305B92605A4BFB93A588C961A646EEAB /* DNCustomAlertPresentBaseAnimator.m */; };
 		DA4FDB21C8A622F43B7DC216CE3602D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		E0D3FACDD1D664456C77C34C637326D2 /* DNAlertOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE4B8F69EF5F35D64F8BA21E6E5CB04 /* DNAlertOperationQueue.m */; };
-		E9197ED2BF4D760EB20CDA2275261D85 /* DNCustomAlertPresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FB59F609B21E620C6B2691E096E6DB /* DNCustomAlertPresentAnimator.m */; };
-		EF72FE13BE9992C98B098FF2504D0974 /* DNAlertOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D8EB32FE7407A749C8ADAC77E892DB /* DNAlertOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0E632297EB2C8FA55C281BA81387317 /* DNCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE098EF10C6E37AF7F7E80B7C95834F /* DNCustomAlertView.m */; };
-		F9BBF5A3CE06C38D57D1CA35E8ABA64A /* DNCustomAlertBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EA65C0F59B1420E934F58315391FD4 /* DNCustomAlertBaseItem.m */; };
-		FCC23FAF2915AF8B3046E31ACA9B18A1 /* DNCustomAlertMainView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF0D044E4592C5705889A9980DC9A97 /* DNCustomAlertMainView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E09A41C20D570345FC263DC726B9F68F /* DNPop.h in Headers */ = {isa = PBXBuildFile; fileRef = F6037CB86B769CA0C64BDAF49065AFBC /* DNPop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5BC479B4BDF415E849661B42B31E13B /* DNPopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0A30E44989084800339B514A265828 /* DNPopOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,88 +71,82 @@
 		00916C852CAA15E25467DECB4C9E027E /* Pods-DNPop_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DNPop_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		043DAFC5AFBE4E6BF55BAB8E3D6540F7 /* Pods-DNPop_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DNPop_Example.modulemap"; sourceTree = "<group>"; };
 		0627FBA7C4B2D2A62DA569B91FC3033B /* Pods_DNPop_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DNPop_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		084D60FBCACAEEFA023FA6645B5798C3 /* DNCustomAlertActionSheetDismissAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNCustomAlertActionSheetDismissAnimator.h; sourceTree = "<group>"; };
-		0B047C45C5347B01B60FAB024EF4BE4C /* DNPop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DNPop.xcconfig; sourceTree = "<group>"; };
+		074AB4486261885300AC2440384F0847 /* DNPopAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopAction.m; sourceTree = "<group>"; };
+		0825CE8853FC1883094B6C7746EB6A30 /* DNPopViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopViewController.m; sourceTree = "<group>"; };
 		0D05F68413797F409F0AC7BA3BB7FEE7 /* Pods-DNPop_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DNPop_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		14544140A4C90129931751BBCCE7D818 /* DNCustomAlertDismissBaseAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNCustomAlertDismissBaseAnimator.h; sourceTree = "<group>"; };
-		160CDBAAAA7A3252BC6D30C60A518B7C /* DNCustomAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNCustomAlertView.h; sourceTree = "<group>"; };
 		1706E82827B4C0CF859417D36F0F16A1 /* Pods-DNPop_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DNPop_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		19B031C1625BC4D385334E4BDADA58B0 /* DNCustomAlertAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNCustomAlertAction.h; sourceTree = "<group>"; };
+		17594F17596640F98BC5BD0221763C0F /* DNPopPresentBaseAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopPresentBaseAnimator.h; sourceTree = "<group>"; };
+		190FE86B08EACF8CF18DABA017679E98 /* DNPop-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DNPop-Info.plist"; sourceTree = "<group>"; };
 		1A035742D1A109CBB07DEAE913E5AA33 /* Pods-DNPop_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DNPop_Example-umbrella.h"; sourceTree = "<group>"; };
 		1A4C5279C462A365D626657029E147A2 /* Pods-DNPop_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DNPop_Example-dummy.m"; sourceTree = "<group>"; };
+		1E4ACE5812C576287D4647EFE74D647E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1F499DA15830D38F64463118149AE619 /* DNPop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DNPop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		217412763349D8793140EA1B6D5550E4 /* DNPopAlertPresentAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopAlertPresentAnimator.h; sourceTree = "<group>"; };
+		218CF3FBA416737DA43003BB8E217C97 /* DNPopAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopAlertView.m; sourceTree = "<group>"; };
 		27F0D58E9E5BCF160D2AD0F699E3C31C /* Pods-DNPop_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DNPop_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2943559639BCD7651DBFB27B654C078F /* DNCustomAlertBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNCustomAlertBaseView.h; sourceTree = "<group>"; };
-		29F236D50CC30D92FC41A6A3C7B49360 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		28556ED79CC429A728F5691395CF84EC /* DNPopActionSheetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopActionSheetView.h; sourceTree = "<group>"; };
 		2C5281D9E0B86311C53E8C1DA82E201C /* Pods-DNPop_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DNPop_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		305B92605A4BFB93A588C961A646EEAB /* DNCustomAlertPresentBaseAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNCustomAlertPresentBaseAnimator.m; sourceTree = "<group>"; };
-		30CC2542BC79D358EAD182BF963D4290 /* DNCustomAlertActionSheetPresentAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNCustomAlertActionSheetPresentAnimator.h; sourceTree = "<group>"; };
+		2F0410B22E669868EFA08E4DE88CB7DF /* DNPopView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopView.m; sourceTree = "<group>"; };
 		30F97A346AA574EA8EDB3C75082D7458 /* Pods-DNPop_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DNPop_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3A342ABB7ED6533BA205CCF6794CBDB1 /* DNCustomAlertController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNCustomAlertController.m; sourceTree = "<group>"; };
-		40482B268209CE2D9E47EBF8223A305C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		459A8E3893C346C6B90FBF6451218565 /* DNCustomAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNCustomAlertController.h; sourceTree = "<group>"; };
-		47D8EB32FE7407A749C8ADAC77E892DB /* DNAlertOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNAlertOperation.h; sourceTree = "<group>"; };
-		4AE43B2817B6E164D75F0EA85B635DC7 /* DNCustomAlertDismissBaseAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNCustomAlertDismissBaseAnimator.m; sourceTree = "<group>"; };
+		3BE7DC9316B38267D054AB563F8858B8 /* DNPopActionSheetDismissAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopActionSheetDismissAnimator.m; sourceTree = "<group>"; };
+		3E9A13C46C1DE2D6A07D470993E752DC /* DNPopItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopItem.h; sourceTree = "<group>"; };
+		4137C5571A9AD2F0DA8E797538AB92D5 /* DNPopActionSheetPresentAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopActionSheetPresentAnimator.h; sourceTree = "<group>"; };
+		46F17EB1E5026EA7EDE4BA4DDE556BA8 /* DNPopOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopOperation.m; sourceTree = "<group>"; };
+		48098C4D816A6AC4019AEA9E03F593F9 /* DNPopOperationQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopOperationQueue.m; sourceTree = "<group>"; };
 		4DCAA86EBEC973C51292F9E9B03448DA /* Pods-DNPop_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DNPop_Tests-dummy.m"; sourceTree = "<group>"; };
-		4DF0D044E4592C5705889A9980DC9A97 /* DNCustomAlertMainView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNCustomAlertMainView.h; sourceTree = "<group>"; };
-		51C7C3D65F97F95F723CDA6CB551176D /* DNBaseAlertViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNBaseAlertViewController.m; sourceTree = "<group>"; };
-		55EA65C0F59B1420E934F58315391FD4 /* DNCustomAlertBaseItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNCustomAlertBaseItem.m; sourceTree = "<group>"; };
-		5DE4B8F69EF5F35D64F8BA21E6E5CB04 /* DNAlertOperationQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNAlertOperationQueue.m; sourceTree = "<group>"; };
-		60D989E21179532F799A46AE302DD989 /* DNCustomAlertPresentBaseAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNCustomAlertPresentBaseAnimator.h; sourceTree = "<group>"; };
-		63C3F041DA9CDAA3286B3629786D54C8 /* DNPop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DNPop-prefix.pch"; sourceTree = "<group>"; };
-		660BEB9922C4D24F00504A92 /* DNProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNProgressHUD.h; sourceTree = "<group>"; };
-		660BEB9A22C4D24F00504A92 /* DNProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNProgressHUD.m; sourceTree = "<group>"; };
+		5AD47BBA9E5014E303EDEB86A4B466DE /* DNPopAlertPresentAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopAlertPresentAnimator.m; sourceTree = "<group>"; };
+		6711B2FAE5EF312DE8247C4AB3CAABDF /* DNPopActionSheetPresentAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopActionSheetPresentAnimator.m; sourceTree = "<group>"; };
 		6768BE9B772879AC5C16E1E2BFF49FEF /* Pods-DNPop_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DNPop_Tests-Info.plist"; sourceTree = "<group>"; };
-		6911F6E23BFD23A7167A17B7C7F29409 /* DNCustomAlertMainView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNCustomAlertMainView.m; sourceTree = "<group>"; };
-		69B4F351C53D34576A2F44FD3D297051 /* DNCustomAlertActionSheetPresentAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNCustomAlertActionSheetPresentAnimator.m; sourceTree = "<group>"; };
 		6AD09FA599C994B575F88C0ADDF38434 /* Pods-DNPop_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DNPop_Tests.modulemap"; sourceTree = "<group>"; };
+		6EB17E53F80C363C511BBFD8A87C91CD /* DNPopView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopView.h; sourceTree = "<group>"; };
 		714BF2E44B67A5CCA59CEA7E76162488 /* Pods-DNPop_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DNPop_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		72AF9477AAA7CB0BCF4504DDC7130E72 /* DNPop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DNPop-dummy.m"; sourceTree = "<group>"; };
-		78FBA477169390B272BD2F5E3BFCB4DE /* DNCustomAlertActionSheetDismissAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNCustomAlertActionSheetDismissAnimator.m; sourceTree = "<group>"; };
+		762EEEBEA19AD70001BF90AB57433241 /* DNPop.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPop.m; sourceTree = "<group>"; };
+		764952308E7D23B1BA9A5EFC8FBE1A20 /* DNPopDismissBaseAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopDismissBaseAnimator.h; sourceTree = "<group>"; };
 		7D7EC47E83E43EFED145BB84BD3D3476 /* Pods-DNPop_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DNPop_Tests-umbrella.h"; sourceTree = "<group>"; };
-		81FB59F609B21E620C6B2691E096E6DB /* DNCustomAlertPresentAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNCustomAlertPresentAnimator.m; sourceTree = "<group>"; };
-		9C3AB638C84CB0D1C2E9B56F222DEBD9 /* DNAlertOperationQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNAlertOperationQueue.h; sourceTree = "<group>"; };
+		7EB4A177605F6DC4E576F3AAE90B0342 /* DNPopAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopAction.h; sourceTree = "<group>"; };
+		7EC6D2AAF860CA22A5F40B32E915450D /* DNPopStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopStyle.h; sourceTree = "<group>"; };
+		8285530E3DE7C8604D816A9A5503A108 /* DNPop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DNPop-dummy.m"; sourceTree = "<group>"; };
+		83A2ECB4FBF87008338B6D62C6E2B8C4 /* DNPopOperationQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopOperationQueue.h; sourceTree = "<group>"; };
+		84E3DD4B338D3B9B3F97CEAE45C0B4FC /* DNPop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DNPop-prefix.pch"; sourceTree = "<group>"; };
+		8547EE671634A460E216ED7BB5961427 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		86FD4C21F69FD5392CB5AD3F9E25D59C /* DNPop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DNPop.modulemap; sourceTree = "<group>"; };
+		8C2B7C3A5326AB044516A533611C961D /* DNPopActionSheetView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopActionSheetView.m; sourceTree = "<group>"; };
+		927C59DB7A4C41C78A558C00BAAB311E /* DNPopAlertDismissAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopAlertDismissAnimator.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F195503EA18F27E9AE72583DC805558 /* DNCustomAlertAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNCustomAlertAction.m; sourceTree = "<group>"; };
-		A5FDFBCD8C4424737276DF88CC8284BC /* DNCustomAlertPresentAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNCustomAlertPresentAnimator.h; sourceTree = "<group>"; };
-		B0C12482AA780707A612DC173CB551E7 /* DNAlertManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNAlertManager.m; sourceTree = "<group>"; };
-		B4E9660D7D35F23BB42F20D1012697A1 /* DNPop.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DNPop.podspec; sourceTree = "<group>"; tabWidth = 2; };
-		B7F879AB1EF04097E803A8FA50543E75 /* DNCustomAlertBaseItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNCustomAlertBaseItem.h; sourceTree = "<group>"; };
-		BA59AC91AE20E88ACDFE0D473A393A1B /* DNPop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DNPop.modulemap; sourceTree = "<group>"; };
-		BA5E23024DD5111BA19DF26857CA782A /* DNCustomAlertActionSheetView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNCustomAlertActionSheetView.m; sourceTree = "<group>"; };
+		A708F8A8475BA1797DF95F1DCB60CB89 /* DNPopStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopStyle.m; sourceTree = "<group>"; };
+		AD3905E10E2A38D2C54E842332940089 /* DNPop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DNPop.xcconfig; sourceTree = "<group>"; };
+		BB0A30E44989084800339B514A265828 /* DNPopOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopOperation.h; sourceTree = "<group>"; };
 		C065CE9093F377319A56CDBA8CB41495 /* Pods-DNPop_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DNPop_Example-Info.plist"; sourceTree = "<group>"; };
-		C544322FD06A3A3755973B210DB0BA12 /* DNAlertManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNAlertManager.h; sourceTree = "<group>"; };
-		C65550C41150F3A6D22FDE7C930641BB /* DNPop-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DNPop-Info.plist"; sourceTree = "<group>"; };
-		C8CDDE472B3017D860CD02FE982B7CC4 /* DNPop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DNPop-umbrella.h"; sourceTree = "<group>"; };
-		CC24D982AC5FFE6F0D7005E844773CEC /* DNCustomAlertItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNCustomAlertItem.m; sourceTree = "<group>"; };
-		CE9607A6B169C92FBECAA1A49526FF1E /* DNCustomAlertBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNCustomAlertBaseView.m; sourceTree = "<group>"; };
-		D002D0806550C962E485646433DCB7AE /* DNAlertOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNAlertOperation.m; sourceTree = "<group>"; };
-		D528EEEA98ABFCCB2CF8DE056E14F560 /* DNCustomAlertDismissAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNCustomAlertDismissAnimator.m; sourceTree = "<group>"; };
-		D83219852707CDCA5F13D08DFDFBE4C3 /* DNBaseAlertViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNBaseAlertViewController.h; sourceTree = "<group>"; };
-		D8D4393B1E6CC4B9EACA23D512D7306C /* DNCustomAlertActionSheetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNCustomAlertActionSheetView.h; sourceTree = "<group>"; };
-		DAD1A7BA29D8E71DB9B813823274F649 /* DNCustomAlertItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNCustomAlertItem.h; sourceTree = "<group>"; };
-		DBE098EF10C6E37AF7F7E80B7C95834F /* DNCustomAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNCustomAlertView.m; sourceTree = "<group>"; };
+		C7E533E17A0F8308E530B5EC9DB0400F /* DNPop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DNPop-umbrella.h"; sourceTree = "<group>"; };
+		D50CA2DB2BA872E57E107D54B09E876A /* DNPopAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopAlertView.h; sourceTree = "<group>"; };
+		DD141897D48E9CA1C6500C62DCDDB6F8 /* DNPopViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopViewController.h; sourceTree = "<group>"; };
+		DDCB843EBE9972B9503AD1C69941899A /* DNPop.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DNPop.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E28FF5FACC5644A154A4FC3FDCA400FE /* DNPopPresentBaseAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopPresentBaseAnimator.m; sourceTree = "<group>"; };
+		E3A549B3B5B385249DCEF9BC09C440AA /* DNPopActionSheetDismissAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopActionSheetDismissAnimator.h; sourceTree = "<group>"; };
+		E3FB64BBD705B9473B624EBE70765EA6 /* DNPopAlertDismissAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopAlertDismissAnimator.m; sourceTree = "<group>"; };
+		E92CDB85F11D3380C81959CB2D4BBD6B /* DNPopDismissBaseAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopDismissBaseAnimator.m; sourceTree = "<group>"; };
 		EA44A9B786D0DBFE32E442E8D32F7C6D /* Pods-DNPop_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DNPop_Example-frameworks.sh"; sourceTree = "<group>"; };
 		EB4FCCAD0DCC9F32BC691EEF0B743665 /* Pods_DNPop_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DNPop_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C441B6E06140E67A9278A3060652D0 /* DNPopItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopItem.m; sourceTree = "<group>"; };
 		F599D97F0B19EB23EFFD694E8D030AB9 /* Pods-DNPop_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DNPop_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FFE579D20D32FBE515C2F4EC447ADC73 /* DNCustomAlertDismissAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNCustomAlertDismissAnimator.h; sourceTree = "<group>"; };
+		F6037CB86B769CA0C64BDAF49065AFBC /* DNPop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPop.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		10C9F7BB1AC1B55DEB3895BDC7CC0B84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F565208EA7F1FA970A74445885E6ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C8EFE0877636E128E47409D52F7D55AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				60C1D0C7D88BDB05B15D62980E30399B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D979B7B9FD02661616F2120DA4EF2EB9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				388CBE1A9151D6E8513DB8E421830A4D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,40 +161,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18A5321DFCE0FDF23E971CFB7949BEF3 /* Animator */ = {
+		081F47AF95CD63D7DAA8B1346FFE4451 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				084D60FBCACAEEFA023FA6645B5798C3 /* DNCustomAlertActionSheetDismissAnimator.h */,
-				78FBA477169390B272BD2F5E3BFCB4DE /* DNCustomAlertActionSheetDismissAnimator.m */,
-				30CC2542BC79D358EAD182BF963D4290 /* DNCustomAlertActionSheetPresentAnimator.h */,
-				69B4F351C53D34576A2F44FD3D297051 /* DNCustomAlertActionSheetPresentAnimator.m */,
-				FFE579D20D32FBE515C2F4EC447ADC73 /* DNCustomAlertDismissAnimator.h */,
-				D528EEEA98ABFCCB2CF8DE056E14F560 /* DNCustomAlertDismissAnimator.m */,
-				14544140A4C90129931751BBCCE7D818 /* DNCustomAlertDismissBaseAnimator.h */,
-				4AE43B2817B6E164D75F0EA85B635DC7 /* DNCustomAlertDismissBaseAnimator.m */,
-				A5FDFBCD8C4424737276DF88CC8284BC /* DNCustomAlertPresentAnimator.h */,
-				81FB59F609B21E620C6B2691E096E6DB /* DNCustomAlertPresentAnimator.m */,
-				60D989E21179532F799A46AE302DD989 /* DNCustomAlertPresentBaseAnimator.h */,
-				305B92605A4BFB93A588C961A646EEAB /* DNCustomAlertPresentBaseAnimator.m */,
+				DDCB843EBE9972B9503AD1C69941899A /* DNPop.podspec */,
+				1E4ACE5812C576287D4647EFE74D647E /* LICENSE */,
+				8547EE671634A460E216ED7BB5961427 /* README.md */,
 			);
-			name = Animator;
-			path = DNPop/Classes/Animator;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		572F2F52435E6795602D0CDE18D921CB /* Main */ = {
+		32862246EBF229A549B652F39C800175 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C544322FD06A3A3755973B210DB0BA12 /* DNAlertManager.h */,
-				B0C12482AA780707A612DC173CB551E7 /* DNAlertManager.m */,
-				47D8EB32FE7407A749C8ADAC77E892DB /* DNAlertOperation.h */,
-				D002D0806550C962E485646433DCB7AE /* DNAlertOperation.m */,
-				9C3AB638C84CB0D1C2E9B56F222DEBD9 /* DNAlertOperationQueue.h */,
-				5DE4B8F69EF5F35D64F8BA21E6E5CB04 /* DNAlertOperationQueue.m */,
-				660BEB9922C4D24F00504A92 /* DNProgressHUD.h */,
-				660BEB9A22C4D24F00504A92 /* DNProgressHUD.m */,
+				DD141897D48E9CA1C6500C62DCDDB6F8 /* DNPopViewController.h */,
+				0825CE8853FC1883094B6C7746EB6A30 /* DNPopViewController.m */,
 			);
-			name = Main;
-			path = DNPop/Classes/Main;
+			name = ViewController;
+			path = DNPop/Classes/ViewController;
+			sourceTree = "<group>";
+		};
+		3594F28566E6D0A0785E13E88B001F1E /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				7EB4A177605F6DC4E576F3AAE90B0342 /* DNPopAction.h */,
+				074AB4486261885300AC2440384F0847 /* DNPopAction.m */,
+			);
+			name = Action;
+			path = DNPop/Classes/Action;
+			sourceTree = "<group>";
+		};
+		5211664791E3ACFF10B232D64E149B6A /* DNPop */ = {
+			isa = PBXGroup;
+			children = (
+				3594F28566E6D0A0785E13E88B001F1E /* Action */,
+				A7D858D3D41C02EFBC293A10F4960FF5 /* Animator */,
+				AC76EB38AABAF4694BA20A68A38B3E5A /* Main */,
+				081F47AF95CD63D7DAA8B1346FFE4451 /* Pod */,
+				CC32F92835A46969E8375E98E3629BE1 /* Support Files */,
+				9D2427D901584C03DEC8E65768256567 /* VIew */,
+				32862246EBF229A549B652F39C800175 /* ViewController */,
+			);
+			name = DNPop;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		6A6108EEE6AD50D234CF8125ACE0966E /* Pods-DNPop_Tests */ = {
@@ -232,6 +229,58 @@
 				6A6108EEE6AD50D234CF8125ACE0966E /* Pods-DNPop_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9D2427D901584C03DEC8E65768256567 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				7EC6D2AAF860CA22A5F40B32E915450D /* DNPopStyle.h */,
+				A708F8A8475BA1797DF95F1DCB60CB89 /* DNPopStyle.m */,
+				3E9A13C46C1DE2D6A07D470993E752DC /* DNPopItem.h */,
+				F4C441B6E06140E67A9278A3060652D0 /* DNPopItem.m */,
+				6EB17E53F80C363C511BBFD8A87C91CD /* DNPopView.h */,
+				2F0410B22E669868EFA08E4DE88CB7DF /* DNPopView.m */,
+				D50CA2DB2BA872E57E107D54B09E876A /* DNPopAlertView.h */,
+				218CF3FBA416737DA43003BB8E217C97 /* DNPopAlertView.m */,
+				28556ED79CC429A728F5691395CF84EC /* DNPopActionSheetView.h */,
+				8C2B7C3A5326AB044516A533611C961D /* DNPopActionSheetView.m */,
+			);
+			name = VIew;
+			path = DNPop/Classes/VIew;
+			sourceTree = "<group>";
+		};
+		A7D858D3D41C02EFBC293A10F4960FF5 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				E3A549B3B5B385249DCEF9BC09C440AA /* DNPopActionSheetDismissAnimator.h */,
+				3BE7DC9316B38267D054AB563F8858B8 /* DNPopActionSheetDismissAnimator.m */,
+				4137C5571A9AD2F0DA8E797538AB92D5 /* DNPopActionSheetPresentAnimator.h */,
+				6711B2FAE5EF312DE8247C4AB3CAABDF /* DNPopActionSheetPresentAnimator.m */,
+				927C59DB7A4C41C78A558C00BAAB311E /* DNPopAlertDismissAnimator.h */,
+				E3FB64BBD705B9473B624EBE70765EA6 /* DNPopAlertDismissAnimator.m */,
+				217412763349D8793140EA1B6D5550E4 /* DNPopAlertPresentAnimator.h */,
+				5AD47BBA9E5014E303EDEB86A4B466DE /* DNPopAlertPresentAnimator.m */,
+				764952308E7D23B1BA9A5EFC8FBE1A20 /* DNPopDismissBaseAnimator.h */,
+				E92CDB85F11D3380C81959CB2D4BBD6B /* DNPopDismissBaseAnimator.m */,
+				17594F17596640F98BC5BD0221763C0F /* DNPopPresentBaseAnimator.h */,
+				E28FF5FACC5644A154A4FC3FDCA400FE /* DNPopPresentBaseAnimator.m */,
+			);
+			name = Animator;
+			path = DNPop/Classes/Animator;
+			sourceTree = "<group>";
+		};
+		AC76EB38AABAF4694BA20A68A38B3E5A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F6037CB86B769CA0C64BDAF49065AFBC /* DNPop.h */,
+				762EEEBEA19AD70001BF90AB57433241 /* DNPop.m */,
+				BB0A30E44989084800339B514A265828 /* DNPopOperation.h */,
+				46F17EB1E5026EA7EDE4BA4DDE556BA8 /* DNPopOperation.m */,
+				83A2ECB4FBF87008338B6D62C6E2B8C4 /* DNPopOperationQueue.h */,
+				48098C4D816A6AC4019AEA9E03F593F9 /* DNPopOperationQueue.m */,
+			);
+			name = Main;
+			path = DNPop/Classes/Main;
 			sourceTree = "<group>";
 		};
 		B59B38672C26D458495ED0C14988C0E5 /* Products */ = {
@@ -269,29 +318,18 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C42A28ED0832EA641476502A47481301 /* Action */ = {
+		CC32F92835A46969E8375E98E3629BE1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				19B031C1625BC4D385334E4BDADA58B0 /* DNCustomAlertAction.h */,
-				9F195503EA18F27E9AE72583DC805558 /* DNCustomAlertAction.m */,
+				86FD4C21F69FD5392CB5AD3F9E25D59C /* DNPop.modulemap */,
+				AD3905E10E2A38D2C54E842332940089 /* DNPop.xcconfig */,
+				8285530E3DE7C8604D816A9A5503A108 /* DNPop-dummy.m */,
+				190FE86B08EACF8CF18DABA017679E98 /* DNPop-Info.plist */,
+				84E3DD4B338D3B9B3F97CEAE45C0B4FC /* DNPop-prefix.pch */,
+				C7E533E17A0F8308E530B5EC9DB0400F /* DNPop-umbrella.h */,
 			);
-			name = Action;
-			path = DNPop/Classes/Action;
-			sourceTree = "<group>";
-		};
-		CDF225992AA2E6A9B87906A8D0580BA6 /* DNPop */ = {
-			isa = PBXGroup;
-			children = (
-				C42A28ED0832EA641476502A47481301 /* Action */,
-				18A5321DFCE0FDF23E971CFB7949BEF3 /* Animator */,
-				572F2F52435E6795602D0CDE18D921CB /* Main */,
-				D257B5DC995D9D158855D3BAC7E41D9E /* Pod */,
-				FE7BE1E9063A0DE67500BB6092C11F73 /* Support Files */,
-				EBFDA84C8E2DB5CA5456FC7556CB8E07 /* VIew */,
-				F0BDF951FCC267FD15B99C7FF1C6D6F4 /* ViewController */,
-			);
-			name = DNPop;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DNPop";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -313,73 +351,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D257B5DC995D9D158855D3BAC7E41D9E /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				B4E9660D7D35F23BB42F20D1012697A1 /* DNPop.podspec */,
-				40482B268209CE2D9E47EBF8223A305C /* LICENSE */,
-				29F236D50CC30D92FC41A6A3C7B49360 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		E7D24C960B1E28B61A28A56B1C49AB81 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CDF225992AA2E6A9B87906A8D0580BA6 /* DNPop */,
+				5211664791E3ACFF10B232D64E149B6A /* DNPop */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		EBFDA84C8E2DB5CA5456FC7556CB8E07 /* VIew */ = {
-			isa = PBXGroup;
-			children = (
-				D8D4393B1E6CC4B9EACA23D512D7306C /* DNCustomAlertActionSheetView.h */,
-				BA5E23024DD5111BA19DF26857CA782A /* DNCustomAlertActionSheetView.m */,
-				DAD1A7BA29D8E71DB9B813823274F649 /* DNCustomAlertItem.h */,
-				CC24D982AC5FFE6F0D7005E844773CEC /* DNCustomAlertItem.m */,
-				4DF0D044E4592C5705889A9980DC9A97 /* DNCustomAlertMainView.h */,
-				6911F6E23BFD23A7167A17B7C7F29409 /* DNCustomAlertMainView.m */,
-				160CDBAAAA7A3252BC6D30C60A518B7C /* DNCustomAlertView.h */,
-				DBE098EF10C6E37AF7F7E80B7C95834F /* DNCustomAlertView.m */,
-				B7F879AB1EF04097E803A8FA50543E75 /* DNCustomAlertBaseItem.h */,
-				55EA65C0F59B1420E934F58315391FD4 /* DNCustomAlertBaseItem.m */,
-				2943559639BCD7651DBFB27B654C078F /* DNCustomAlertBaseView.h */,
-				CE9607A6B169C92FBECAA1A49526FF1E /* DNCustomAlertBaseView.m */,
-			);
-			name = VIew;
-			path = DNPop/Classes/VIew;
-			sourceTree = "<group>";
-		};
-		F0BDF951FCC267FD15B99C7FF1C6D6F4 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				D83219852707CDCA5F13D08DFDFBE4C3 /* DNBaseAlertViewController.h */,
-				51C7C3D65F97F95F723CDA6CB551176D /* DNBaseAlertViewController.m */,
-				459A8E3893C346C6B90FBF6451218565 /* DNCustomAlertController.h */,
-				3A342ABB7ED6533BA205CCF6794CBDB1 /* DNCustomAlertController.m */,
-			);
-			name = ViewController;
-			path = DNPop/Classes/ViewController;
-			sourceTree = "<group>";
-		};
-		FE7BE1E9063A0DE67500BB6092C11F73 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BA59AC91AE20E88ACDFE0D473A393A1B /* DNPop.modulemap */,
-				0B047C45C5347B01B60FAB024EF4BE4C /* DNPop.xcconfig */,
-				72AF9477AAA7CB0BCF4504DDC7130E72 /* DNPop-dummy.m */,
-				C65550C41150F3A6D22FDE7C930641BB /* DNPop-Info.plist */,
-				63C3F041DA9CDAA3286B3629786D54C8 /* DNPop-prefix.pch */,
-				C8CDDE472B3017D860CD02FE982B7CC4 /* DNPop-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/DNPop";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		AF31971F61FE798B41F2C6E8455DAA31 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94533D1C6F70BC08B2AA696BF62CF977 /* DNPop-umbrella.h in Headers */,
+				E09A41C20D570345FC263DC726B9F68F /* DNPop.h in Headers */,
+				74E67E952CDF7FA9F2D5C7816DA568AD /* DNPopAction.h in Headers */,
+				CD01937CE68D3593C4A2BECBFEDF010E /* DNPopActionSheetDismissAnimator.h in Headers */,
+				5C6B2A4632374B5E0CB9BB6F8F6DD939 /* DNPopActionSheetPresentAnimator.h in Headers */,
+				BB52F51FB9E9AF9A190E49CD3229EEE7 /* DNPopActionSheetView.h in Headers */,
+				87B48501D13317A5385F8DA4EF10461A /* DNPopAlertDismissAnimator.h in Headers */,
+				99C9D9458FD2815A8B25D2F359964D20 /* DNPopAlertPresentAnimator.h in Headers */,
+				B21B83AAB0DFA643AF5036C68B9A2C8B /* DNPopAlertView.h in Headers */,
+				C8C54FB7F356F92A255E5899474DA586 /* DNPopDismissBaseAnimator.h in Headers */,
+				661A898975D5FE1DEC0884A05A525034 /* DNPopItem.h in Headers */,
+				E5BC479B4BDF415E849661B42B31E13B /* DNPopOperation.h in Headers */,
+				1D16F1FF0976E634D2111E50DCBEE1E3 /* DNPopOperationQueue.h in Headers */,
+				488EBF876979F98C3A130AAD706608D2 /* DNPopPresentBaseAnimator.h in Headers */,
+				0253B51B0DFB5EC740D7639AFD4FD9B3 /* DNPopStyle.h in Headers */,
+				50A60EF9D09276BC87E491413039F451 /* DNPopView.h in Headers */,
+				6E1A702191F79D403205D1F185F49B7B /* DNPopViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB77DE479B29ADB9583941A076FE6939 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -393,33 +399,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				23C8E2D72E16B03D1C7AAB3291E27EDA /* Pods-DNPop_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F0A8D4F7B5A76B44CB7C6BD4E59C11F9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				31B5CBBDEA4EE61A797DBAA0C9C029B8 /* DNAlertManager.h in Headers */,
-				EF72FE13BE9992C98B098FF2504D0974 /* DNAlertOperation.h in Headers */,
-				3567271A964DA50D8752D2DF8D98FE0B /* DNAlertOperationQueue.h in Headers */,
-				BF2119F1FB4DE1EDB4D3584B70E69AD5 /* DNBaseAlertViewController.h in Headers */,
-				40C41AFD20F6C7196015B620A826FA12 /* DNCustomAlertAction.h in Headers */,
-				A0FDB484D9710B0DF7314B34537FF3E4 /* DNCustomAlertActionSheetDismissAnimator.h in Headers */,
-				82DCC487A440F070D00311DD6DD6E012 /* DNCustomAlertActionSheetPresentAnimator.h in Headers */,
-				637E11E94420FDBD4FE255E7E1B192E2 /* DNCustomAlertActionSheetView.h in Headers */,
-				61D3708CE73FDC260864A189CE367547 /* DNCustomAlertBaseItem.h in Headers */,
-				6A4FAD01905F2A575E197ED941691BB8 /* DNCustomAlertBaseView.h in Headers */,
-				8FA63B206F6B804889DFAB5BD926DBE9 /* DNCustomAlertController.h in Headers */,
-				57CF2FFD902C6E22500841B6D4408AC4 /* DNCustomAlertDismissAnimator.h in Headers */,
-				87E929B4F89857641A1ADE85D331459B /* DNCustomAlertDismissBaseAnimator.h in Headers */,
-				660BEB9B22C4D24F00504A92 /* DNProgressHUD.h in Headers */,
-				79E1CA26E523F7EBA0D335321E2CBF41 /* DNCustomAlertItem.h in Headers */,
-				FCC23FAF2915AF8B3046E31ACA9B18A1 /* DNCustomAlertMainView.h in Headers */,
-				64B546E65DF97E10CDDAEFB7B1BC070E /* DNCustomAlertPresentAnimator.h in Headers */,
-				7F817E87E5EEB6C70ED78E60A8FA6693 /* DNCustomAlertPresentBaseAnimator.h in Headers */,
-				8FFC23780D25ACD41976FB2DF57359B3 /* DNCustomAlertView.h in Headers */,
-				8967874FE501BBBEEA770FB25687A242 /* DNPop-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,12 +445,12 @@
 		};
 		DACA273B47F628AD2A1CE76FBFB9F4F1 /* DNPop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 99549E8CC958B78C72CE90ADA97D61BC /* Build configuration list for PBXNativeTarget "DNPop" */;
+			buildConfigurationList = 6F889D394F419F4186766AC11EBBC9FB /* Build configuration list for PBXNativeTarget "DNPop" */;
 			buildPhases = (
-				F0A8D4F7B5A76B44CB7C6BD4E59C11F9 /* Headers */,
-				2F528D67896714F0E2FAD41C81BD2373 /* Sources */,
-				D979B7B9FD02661616F2120DA4EF2EB9 /* Frameworks */,
-				B5C8B2858B1CBA49731D26E568C4FB57 /* Resources */,
+				AF31971F61FE798B41F2C6E8455DAA31 /* Headers */,
+				72E983EFFDE5CEC37FC77DFFAE7157FA /* Sources */,
+				10C9F7BB1AC1B55DEB3895BDC7CC0B84 /* Frameworks */,
+				F7A0422086C4AAF1AED45A94FB3B5810 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -518,14 +497,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5C8B2858B1CBA49731D26E568C4FB57 /* Resources */ = {
+		BDD8918BEFCCEA69293CD2B70A7BF54D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BDD8918BEFCCEA69293CD2B70A7BF54D /* Resources */ = {
+		F7A0422086C4AAF1AED45A94FB3B5810 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -535,38 +514,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2F528D67896714F0E2FAD41C81BD2373 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CA36FC89199641D2024702A766196F7A /* DNAlertManager.m in Sources */,
-				2B2B5D927F1DB6B0399DFE418F07B7D7 /* DNAlertOperation.m in Sources */,
-				E0D3FACDD1D664456C77C34C637326D2 /* DNAlertOperationQueue.m in Sources */,
-				19D832A99F26977A538512ACE2AA027A /* DNBaseAlertViewController.m in Sources */,
-				971B430227D7612597E302493FFDB53A /* DNCustomAlertAction.m in Sources */,
-				40E8DCA27183B17003D260EDC4C626A0 /* DNCustomAlertActionSheetDismissAnimator.m in Sources */,
-				AA9637E334EED08D3E47B2EBD74FD7A2 /* DNCustomAlertActionSheetPresentAnimator.m in Sources */,
-				D095C1A6E1A0211793A7518E9453F5DA /* DNCustomAlertActionSheetView.m in Sources */,
-				F9BBF5A3CE06C38D57D1CA35E8ABA64A /* DNCustomAlertBaseItem.m in Sources */,
-				01B72EE51E08552AC1FD5BDA27ED9B32 /* DNCustomAlertBaseView.m in Sources */,
-				06B8072C3DDF9E8501CB5DD6203A227E /* DNCustomAlertController.m in Sources */,
-				A9149FAB240BA50046ED65ADD843B39E /* DNCustomAlertDismissAnimator.m in Sources */,
-				A65297E21FFA2B7AAE6499BEC0E22ED3 /* DNCustomAlertDismissBaseAnimator.m in Sources */,
-				AD6605FDF44E477D9090EB29E3FD3108 /* DNCustomAlertItem.m in Sources */,
-				28E3B69EEF028040A3FE69B7A62FE2B0 /* DNCustomAlertMainView.m in Sources */,
-				E9197ED2BF4D760EB20CDA2275261D85 /* DNCustomAlertPresentAnimator.m in Sources */,
-				D88E1BAFF8181838C5635AF82DF27A5E /* DNCustomAlertPresentBaseAnimator.m in Sources */,
-				F0E632297EB2C8FA55C281BA81387317 /* DNCustomAlertView.m in Sources */,
-				660BEB9C22C4D24F00504A92 /* DNProgressHUD.m in Sources */,
-				39FCB7D4E07EC434E4431B7C150873BF /* DNPop-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		43A4DDAB339E1709ADFC823FA7A26374 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				03EACDF6FBC98028F06186CAE63BF84C /* Pods-DNPop_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72E983EFFDE5CEC37FC77DFFAE7157FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE2C917F435E8E704A24AB7E8EE87E4 /* DNPop-dummy.m in Sources */,
+				10CF9243E7E600D161DAA110F1B0B8DF /* DNPop.m in Sources */,
+				81269A7201B1FB2861665C7AD7895E44 /* DNPopAction.m in Sources */,
+				CF8B530B2F73A711C3D1E4D9D5327332 /* DNPopActionSheetDismissAnimator.m in Sources */,
+				2490C2A0FA85EBE34AAD0F45CD816E92 /* DNPopActionSheetPresentAnimator.m in Sources */,
+				290CC6D96EEB0F6D979C798147328AC2 /* DNPopActionSheetView.m in Sources */,
+				76587F5CC5BD54F9142FE4FE288F6676 /* DNPopAlertDismissAnimator.m in Sources */,
+				31FEA0F8572FFB53F41E748919528FCD /* DNPopAlertPresentAnimator.m in Sources */,
+				AE1CE58A45652FFBFAADCD49EDF3EEF7 /* DNPopAlertView.m in Sources */,
+				B0024A6B921D8261799020748F06252F /* DNPopDismissBaseAnimator.m in Sources */,
+				55B4A08880B4C096BD38EF7AEF6F02B3 /* DNPopItem.m in Sources */,
+				D52A6175D41CF6C424F5DD88C5FD8ED6 /* DNPopOperation.m in Sources */,
+				1D2FCEEA7363856810DB0D2E6716DF38 /* DNPopOperationQueue.m in Sources */,
+				B1090CBFDCA3A59E47C1F45FE6BFF623 /* DNPopPresentBaseAnimator.m in Sources */,
+				BABDB94B0026EFBFB73C99AA0C5DA153 /* DNPopStyle.m in Sources */,
+				D5386028D2EF7FB7AD8AF6026A63E163 /* DNPopView.m in Sources */,
+				293D18EECAC1C080E558B43D40AF5802 /* DNPopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,36 +572,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01C9CAA16C1D7D9967ED5411998AA14D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B047C45C5347B01B60FAB024EF4BE4C /* DNPop.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DNPop/DNPop-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DNPop/DNPop-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DNPop/DNPop.modulemap";
-				PRODUCT_MODULE_NAME = DNPop;
-				PRODUCT_NAME = DNPop;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		3395DCBA291EB2D4CFD5A292CECA43F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D05F68413797F409F0AC7BA3BB7FEE7 /* Pods-DNPop_Example.debug.xcconfig */;
@@ -658,6 +604,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		40B753C4A50C5FE7AEDDB47FD91C69EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD3905E10E2A38D2C54E842332940089 /* DNPop.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DNPop/DNPop-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DNPop/DNPop-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DNPop/DNPop.modulemap";
+				PRODUCT_MODULE_NAME = DNPop;
+				PRODUCT_NAME = DNPop;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -782,9 +759,9 @@
 			};
 			name = Debug;
 		};
-		AC1E86DCDE853A1A69AD3074EEE92B2B /* Release */ = {
+		8F89CF7B826849EED3434D8211911650 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B047C45C5347B01B60FAB024EF4BE4C /* DNPop.xcconfig */;
+			baseConfigurationReference = AD3905E10E2A38D2C54E842332940089 /* DNPop.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -807,11 +784,10 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		B67AA3BC51ACE71719279D2B0CDF297C /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -926,11 +902,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99549E8CC958B78C72CE90ADA97D61BC /* Build configuration list for PBXNativeTarget "DNPop" */ = {
+		6F889D394F419F4186766AC11EBBC9FB /* Build configuration list for PBXNativeTarget "DNPop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				01C9CAA16C1D7D9967ED5411998AA14D /* Debug */,
-				AC1E86DCDE853A1A69AD3074EEE92B2B /* Release */,
+				8F89CF7B826849EED3434D8211911650 /* Debug */,
+				40B753C4A50C5FE7AEDDB47FD91C69EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
