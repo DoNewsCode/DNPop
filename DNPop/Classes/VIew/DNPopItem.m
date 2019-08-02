@@ -18,7 +18,7 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     CGRect windowFrame = [UIScreen mainScreen].bounds;
-    CGRect currentFrame = (CGRect){0.,0.,windowFrame.size.width - 30.,57.};
+    CGRect currentFrame = (CGRect){0.,0.,windowFrame.size.width - 30.,50.};
     self = [super initWithFrame:currentFrame];
     if (self) {
         [self createContent];
