@@ -41,17 +41,17 @@
 
 - (void)layoutCustomSubviews {
     
-    CGFloat previousItemMaxY = self.alertStyle.verticalVSpacing;
+    CGFloat previousItemMaxY = self.alertStyle.headerEdge.top;
     if (self.title) {
         CGSize titleSize =  [self.titleLabel.text boundingRectWithSize:CGSizeMake(self.frame.size.width - 2 * self.alertStyle.horizontalSpacing, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.titleLabel.font} context:nil].size;
-        self.titleLabel.frame = (CGRect){self.alertStyle.horizontalSpacing,previousItemMaxY,self.frame.size.width - 2 * self.alertStyle.horizontalSpacing,titleSize.height};
-        previousItemMaxY += (titleSize.height + self.alertStyle.verticalVSpacing);
+        self.titleLabel.frame = (CGRect){self.alertStyle.headerEdge.left,previousItemMaxY,self.frame.size.width - self.alertStyle.headerEdge.left - self.alertStyle.headerEdge.right,titleSize.height};
+        previousItemMaxY += (titleSize.height + self.alertStyle.headerInsetsMargin);
     }
     
     if (self.message) {
         CGSize messageSize =  [self.messageLabel.text boundingRectWithSize:CGSizeMake(self.frame.size.width - 2 * self.alertStyle.horizontalSpacing, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.messageLabel.font} context:nil].size;
-        self.messageLabel.frame = (CGRect){self.alertStyle.horizontalSpacing,previousItemMaxY,self.frame.size.width - 2 * self.alertStyle.horizontalSpacing,messageSize.height};
-        previousItemMaxY += (messageSize.height + self.alertStyle.verticalVSpacing);
+        self.messageLabel.frame = (CGRect){self.alertStyle.headerEdge.left,previousItemMaxY,self.frame.size.width - self.alertStyle.headerEdge.left - self.alertStyle.headerEdge.right,messageSize.height};
+        previousItemMaxY += (messageSize.height + self.alertStyle.headerEdge.bottom);
     }
     if ((self.message || self.title) && self.alertActions.count > 0 && self.alertStyle.headerLine) {
         CALayer *line = [CALayer new];

@@ -16,6 +16,9 @@
         self.cornerRadii = CGSizeMake(20, 20);
         self.horizontalSpacing = 15.;
         self.verticalVSpacing = 10.;
+        
+        self.headerEdge = UIEdgeInsetsMake(30., 20., 30., 20.);
+        self.headerInsetsMargin = 5.;
         self.alertWidth = 270.;
         self.backgroundColor = [UIColor whiteColor];
         self.dividingLineColor = [UIColor grayColor];
@@ -33,14 +36,14 @@
         self.titleTextColor = [UIColor blackColor];
         self.messageTextColor = [UIColor grayColor];
         
-        self.titleFont = [UIFont systemFontOfSize:16.];
-        self.messageFont = [UIFont systemFontOfSize:14.];
+        self.titleFont = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
+        self.messageFont = [UIFont fontWithName:@"PingFangSC-Regular" size:12];
         
         self.defaultTextColor = [UIColor blackColor];
-        self.defaultFont = [UIFont systemFontOfSize:14.];
+        self.defaultFont = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
         
         self.cancelTextColor = [UIColor redColor];
-        self.cancelFont = [UIFont systemFontOfSize:14.];
+        self.cancelFont = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
     }
     return self;
 }

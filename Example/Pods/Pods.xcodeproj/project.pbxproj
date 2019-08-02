@@ -121,7 +121,7 @@
 		C7E533E17A0F8308E530B5EC9DB0400F /* DNPop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DNPop-umbrella.h"; sourceTree = "<group>"; };
 		D50CA2DB2BA872E57E107D54B09E876A /* DNPopAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopAlertView.h; sourceTree = "<group>"; };
 		DD141897D48E9CA1C6500C62DCDDB6F8 /* DNPopViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopViewController.h; sourceTree = "<group>"; };
-		DDCB843EBE9972B9503AD1C69941899A /* DNPop.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DNPop.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DDCB843EBE9972B9503AD1C69941899A /* DNPop.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DNPop.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		E28FF5FACC5644A154A4FC3FDCA400FE /* DNPopPresentBaseAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopPresentBaseAnimator.m; sourceTree = "<group>"; };
 		E3A549B3B5B385249DCEF9BC09C440AA /* DNPopActionSheetDismissAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DNPopActionSheetDismissAnimator.h; sourceTree = "<group>"; };
 		E3FB64BBD705B9473B624EBE70765EA6 /* DNPopAlertDismissAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DNPopAlertDismissAnimator.m; sourceTree = "<group>"; };

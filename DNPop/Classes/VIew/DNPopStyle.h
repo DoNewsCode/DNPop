@@ -19,6 +19,10 @@ NS_ASSUME_NONNULL_BEGIN
 /** 垂直间距,默认：10. */
 @property(nonatomic, assign) CGFloat verticalVSpacing;
 
+/** UIEdgeInsetsMake(30., 20., 30., 20.); */
+@property(nonatomic, assign) UIEdgeInsets headerEdge;
+/** 标题与文本垂直间距,默认：5. */
+@property(nonatomic, assign) CGFloat headerInsetsMargin;
 
 /** Alert宽度 仅在非未添加Custom的Action状态下生效，包含自定义的Action时其宽度跟随自定义Action中的Item宽度 默认：270 */
 @property(nonatomic, assign) CGFloat alertWidth;
