@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DNPop'
-  s.version          = '1.0.0.3'
+  s.version          = '1.0.0.4'
   s.summary          = 'A short description of DNPop.'
 
 # This description is used to generate tags and improve search results.
@@ -40,7 +40,4 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
-#  s.dependency 'DNCommonKit'
-#  s.dependency 'DNCommonKit'
-#  s.dependency 'SVProgressHUD'
 end
