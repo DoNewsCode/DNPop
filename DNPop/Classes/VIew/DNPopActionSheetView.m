@@ -41,7 +41,10 @@
 
 - (void)layoutCustomSubviews {
     
-    CGFloat previousItemMaxY = self.alertStyle.headerEdge.top;
+    CGFloat previousItemMaxY = 0;
+    if (self.title || self.message) {
+        previousItemMaxY += self.alertStyle.headerEdge.top;
+    }
     if (self.title) {
         CGSize titleSize =  [self.titleLabel.text boundingRectWithSize:CGSizeMake(self.frame.size.width - 2 * self.alertStyle.horizontalSpacing, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.titleLabel.font} context:nil].size;
         self.titleLabel.frame = (CGRect){self.alertStyle.headerEdge.left,previousItemMaxY,self.frame.size.width - self.alertStyle.headerEdge.left - self.alertStyle.headerEdge.right,titleSize.height};

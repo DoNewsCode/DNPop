@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DNPop'
-  s.version          = '1.0.0.2'
+  s.version          = '1.0.0.3'
   s.summary          = 'A short description of DNPop.'
 
 # This description is used to generate tags and improve search results.
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
-                       DESC
+                       DESC 
 
   s.homepage         = 'https://github.com/DoNewsCode/DNPop'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'

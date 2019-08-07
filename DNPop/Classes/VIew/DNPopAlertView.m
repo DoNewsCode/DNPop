@@ -36,8 +36,10 @@
 
 - (void)layoutCustomSubviews {
     
-    CGFloat previousItemMaxY = self.alertStyle.headerEdge.top;
-    
+    CGFloat previousItemMaxY = 0;
+    if (self.title || self.message) {
+        previousItemMaxY += self.alertStyle.headerEdge.top;
+    }
     CGFloat maxWidth = self.alertStyle.alertWidth;
     for (DNPopAction *action in self.alertActions) {
         if (action.style == DNPopActionStyleCustom && maxWidth < action.item.frame.size.width) {
