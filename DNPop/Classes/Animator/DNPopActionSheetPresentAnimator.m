@@ -39,6 +39,9 @@
         case DNPopPresentStyleSlideUp:
             [self slideUpAnimationWithContext:transitionContext];
             break;
+        case DNPopPresentStyleSlideUpLinear:
+            [self slideUpLinearAnimationWithContext:transitionContext];
+            break;
         case DNPopPresentStyleSlideLeft:
             [self slideLeftAnimationWithContext:transitionContext];
             break;
@@ -64,6 +67,8 @@
             return 0.5;
         case DNPopPresentStyleSlideUp:
             return 0.5;
+        case DNPopPresentStyleSlideUpLinear:
+            return 0.25;
         case DNPopPresentStyleSlideLeft:
             return 0.4;
         case DNPopPresentStyleSlideRight:
@@ -229,6 +234,36 @@
                      completion:^(BOOL finished) {
                          [transitionContext completeTransition:YES];
                      }];
+}
+
+
+- (void)slideUpLinearAnimationWithContext:(id<UIViewControllerContextTransitioning>)transitionContext {
+    DNPopViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    toVC.backgroundView.alpha = 0;
+    toVC.alertView.frame = (CGRect){toVC.alertView.frame.origin.x,toVC.view.frame.size.height,toVC.alertView.frame.size};
+    
+    UIView *containerView = [transitionContext containerView];
+    [containerView addSubview:toVC.view];
+    
+    NSTimeInterval duration = [self transitionDuration:transitionContext];
+    [UIView animateWithDuration:duration
+                     animations:^{
+                         toVC.backgroundView.alpha = self.transitionBackgroundAlpha;
+                         toVC.alertView.frame = (CGRect){toVC.alertView.frame.origin.x,toVC.view.frame.size.height - toVC.alertView.frame.size.height,toVC.alertView.frame.size};
+                     }
+                     completion:^(BOOL finished) {
+                         [transitionContext completeTransition:YES];
+                     }];
+//    [UIView animateWithDuration:duration
+//                          delay:0
+//         usingSpringWithDamping:0
+//          initialSpringVelocity:0
+//                        options:UIViewAnimationOptionCurveLinear
+//                     animations:^{
+//                     }
+//                     completion:^(BOOL finished) {
+//                         [transitionContext completeTransition:YES];
+//                     }];
 }
 
 - (void)slideLeftAnimationWithContext:(id<UIViewControllerContextTransitioning>)transitionContext {

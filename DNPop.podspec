@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DNPop'
-  s.version          = '1.0.0.6'
+  s.version          = '1.0.0.7'
   s.summary          = 'A short description of DNPop.'
 
   

@@ -40,6 +40,9 @@
         case DNPopPresentStyleSlideUp:
             [self slideUpAnimationWithContext:transitionContext];
             break;
+        case DNPopPresentStyleSlideUpLinear:
+            [self slideUpAnimationWithContext:transitionContext];
+            break;
         case DNPopPresentStyleSlideLeft:
             [self slideLeftAnimationWithContext:transitionContext];
             break;
@@ -64,6 +67,8 @@
         case DNPopPresentStyleSlideDown:
             return 0.5;
         case DNPopPresentStyleSlideUp:
+            return 0.5;
+        case DNPopPresentStyleSlideUpLinear:
             return 0.5;
         case DNPopPresentStyleSlideLeft:
             return 0.4;

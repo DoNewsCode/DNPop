@@ -116,7 +116,7 @@
     DNPopStyle *alertStyle = [DNPopStyle new];
     DNPopViewController *customAlertController = [DNPopViewController alertControllerWithTitle:@"这里添加标题" message:@"这里是createCustomActionSheet的描述文字，默认剧中展示,可改变弹出、消失动画类型，可添加自定义视图，DNPopStyle中包含可配置项及配置项说明；" preferredStyle:DNPopViewControllerStyleActionSheet];
     customAlertController.alertStyle = alertStyle;
-    customAlertController.presentStyle = DNPopPresentStyleSlideUp;
+    customAlertController.presentStyle = DNPopPresentStyleSlideUpLinear;
     customAlertController.dismissStyle = DNPopDismissStyleSlideDown;
 //    customAlertController.backgroundCancel = NO;
     DNTestAlertAction *alertAction = [DNTestAlertAction actionWithViewHandler:^(UIButton * _Nonnull button) {

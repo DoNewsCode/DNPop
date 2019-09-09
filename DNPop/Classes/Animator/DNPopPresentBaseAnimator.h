@@ -18,6 +18,7 @@ typedef NS_ENUM(NSInteger, DNPopPresentStyle) {
     DNPopPresentStyleExpandVertical,  // 垂直展开
     DNPopPresentStyleSlideDown,       // 从上往下划入
     DNPopPresentStyleSlideUp,         // 从下往上划入
+    DNPopPresentStyleSlideUpLinear,   // 从下往上划入，线性动画
     DNPopPresentStyleSlideLeft,       // 从右往左划入
     DNPopPresentStyleSlideRight,      // 从左往右划入
 };
