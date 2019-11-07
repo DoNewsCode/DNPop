@@ -42,10 +42,24 @@
     
     self.executing = YES;
     self.finished = NO;
-    [self.fromViewController presentViewController:self.toViewController animated:YES completion:^{
-        
-        self.executing = NO;
-    }];
+    UIViewController *topRootViewController = [[UIApplication  sharedApplication] keyWindow].rootViewController;
+
+    // 在这里加一个这个样式的循环
+    while (topRootViewController.presentedViewController)
+    {
+        // 这里固定写法
+      topRootViewController = topRootViewController.presentedViewController;
+    }
+    // 然后再进行present操作
+     [topRootViewController presentViewController:self.toViewController animated:YES completion:^{
+         
+         self.executing = NO;
+     }];
+    
+//    [self.fromViewController presentViewController:self.toViewController animated:YES completion:^{
+//
+//        self.executing = NO;
+//    }];
     
     __weak typeof(self) weakSelf = self;
     [self.toViewController returnHandler:^(DNPopViewController * _Nonnull alertController) {

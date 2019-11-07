@@ -9,7 +9,7 @@
 #import "DNViewController.h"
 #import "DNPop.h"
 #import "DNTestAlertAction.h"
-
+#import "DNTestViewController.h"
 @interface DNViewController ()
 
 @end
@@ -168,7 +168,9 @@
 }
 
 - (void)eventButton2Click:(UIButton *)button {
-    [self createCustomActionSheet];
+    DNTestViewController *testViewController = [DNTestViewController new];
+    [self presentViewController:testViewController animated:YES completion:nil];
+//    [self createCustomActionSheet];
 }
 
 - (void)eventButton3Click:(UIButton *)button {
