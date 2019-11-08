@@ -64,9 +64,6 @@
     __weak typeof(self) weakSelf = self;
     [self.toViewController returnHandler:^(DNPopViewController * _Nonnull alertController) {
         [weakSelf cancel];
-        weakSelf.finished = YES;
-        if (weakSelf.isExecuting) {
-        }
     }];
 }
 
@@ -74,6 +71,7 @@
     self.executing = YES;
     [self.toViewController dismissViewControllerAnimated:YES completion:^{
         self.executing = NO;
+        self.finished = YES;
     }];
     
 }
