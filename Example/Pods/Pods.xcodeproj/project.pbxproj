@@ -7,63 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0253B51B0DFB5EC740D7639AFD4FD9B3 /* DNPopStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EC6D2AAF860CA22A5F40B32E915450D /* DNPopStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		03EACDF6FBC98028F06186CAE63BF84C /* Pods-DNPop_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAA86EBEC973C51292F9E9B03448DA /* Pods-DNPop_Tests-dummy.m */; };
-		10CF9243E7E600D161DAA110F1B0B8DF /* DNPop.m in Sources */ = {isa = PBXBuildFile; fileRef = 762EEEBEA19AD70001BF90AB57433241 /* DNPop.m */; };
-		1D16F1FF0976E634D2111E50DCBEE1E3 /* DNPopOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 83A2ECB4FBF87008338B6D62C6E2B8C4 /* DNPopOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D2FCEEA7363856810DB0D2E6716DF38 /* DNPopOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 48098C4D816A6AC4019AEA9E03F593F9 /* DNPopOperationQueue.m */; };
-		23C8E2D72E16B03D1C7AAB3291E27EDA /* Pods-DNPop_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A035742D1A109CBB07DEAE913E5AA33 /* Pods-DNPop_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2490C2A0FA85EBE34AAD0F45CD816E92 /* DNPopActionSheetPresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6711B2FAE5EF312DE8247C4AB3CAABDF /* DNPopActionSheetPresentAnimator.m */; };
-		290CC6D96EEB0F6D979C798147328AC2 /* DNPopActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B7C3A5326AB044516A533611C961D /* DNPopActionSheetView.m */; };
-		293D18EECAC1C080E558B43D40AF5802 /* DNPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0825CE8853FC1883094B6C7746EB6A30 /* DNPopViewController.m */; };
-		31FEA0F8572FFB53F41E748919528FCD /* DNPopAlertPresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD47BBA9E5014E303EDEB86A4B466DE /* DNPopAlertPresentAnimator.m */; };
-		488EBF876979F98C3A130AAD706608D2 /* DNPopPresentBaseAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 17594F17596640F98BC5BD0221763C0F /* DNPopPresentBaseAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50A60EF9D09276BC87E491413039F451 /* DNPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB17E53F80C363C511BBFD8A87C91CD /* DNPopView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55B4A08880B4C096BD38EF7AEF6F02B3 /* DNPopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C441B6E06140E67A9278A3060652D0 /* DNPopItem.m */; };
-		5C6B2A4632374B5E0CB9BB6F8F6DD939 /* DNPopActionSheetPresentAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4137C5571A9AD2F0DA8E797538AB92D5 /* DNPopActionSheetPresentAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60C1D0C7D88BDB05B15D62980E30399B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		661A898975D5FE1DEC0884A05A525034 /* DNPopItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E9A13C46C1DE2D6A07D470993E752DC /* DNPopItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E1A702191F79D403205D1F185F49B7B /* DNPopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DD141897D48E9CA1C6500C62DCDDB6F8 /* DNPopViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74E67E952CDF7FA9F2D5C7816DA568AD /* DNPopAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB4A177605F6DC4E576F3AAE90B0342 /* DNPopAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76587F5CC5BD54F9142FE4FE288F6676 /* DNPopAlertDismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FB64BBD705B9473B624EBE70765EA6 /* DNPopAlertDismissAnimator.m */; };
-		7F187E646343E3CAA4039EBC8AF41AD4 /* Pods-DNPop_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4C5279C462A365D626657029E147A2 /* Pods-DNPop_Example-dummy.m */; };
-		81269A7201B1FB2861665C7AD7895E44 /* DNPopAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 074AB4486261885300AC2440384F0847 /* DNPopAction.m */; };
-		87B48501D13317A5385F8DA4EF10461A /* DNPopAlertDismissAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 927C59DB7A4C41C78A558C00BAAB311E /* DNPopAlertDismissAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87F565208EA7F1FA970A74445885E6ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		94533D1C6F70BC08B2AA696BF62CF977 /* DNPop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E533E17A0F8308E530B5EC9DB0400F /* DNPop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99C9D9458FD2815A8B25D2F359964D20 /* DNPopAlertPresentAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 217412763349D8793140EA1B6D5550E4 /* DNPopAlertPresentAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE1CE58A45652FFBFAADCD49EDF3EEF7 /* DNPopAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 218CF3FBA416737DA43003BB8E217C97 /* DNPopAlertView.m */; };
-		B0024A6B921D8261799020748F06252F /* DNPopDismissBaseAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E92CDB85F11D3380C81959CB2D4BBD6B /* DNPopDismissBaseAnimator.m */; };
-		B1090CBFDCA3A59E47C1F45FE6BFF623 /* DNPopPresentBaseAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E28FF5FACC5644A154A4FC3FDCA400FE /* DNPopPresentBaseAnimator.m */; };
-		B21B83AAB0DFA643AF5036C68B9A2C8B /* DNPopAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = D50CA2DB2BA872E57E107D54B09E876A /* DNPopAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BABDB94B0026EFBFB73C99AA0C5DA153 /* DNPopStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A708F8A8475BA1797DF95F1DCB60CB89 /* DNPopStyle.m */; };
-		BB52F51FB9E9AF9A190E49CD3229EEE7 /* DNPopActionSheetView.h in Headers */ = {isa = PBXBuildFile; fileRef = 28556ED79CC429A728F5691395CF84EC /* DNPopActionSheetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8C54FB7F356F92A255E5899474DA586 /* DNPopDismissBaseAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 764952308E7D23B1BA9A5EFC8FBE1A20 /* DNPopDismissBaseAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBE2C917F435E8E704A24AB7E8EE87E4 /* DNPop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8285530E3DE7C8604D816A9A5503A108 /* DNPop-dummy.m */; };
-		CD01937CE68D3593C4A2BECBFEDF010E /* DNPopActionSheetDismissAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = E3A549B3B5B385249DCEF9BC09C440AA /* DNPopActionSheetDismissAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF8B530B2F73A711C3D1E4D9D5327332 /* DNPopActionSheetDismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE7DC9316B38267D054AB563F8858B8 /* DNPopActionSheetDismissAnimator.m */; };
-		D52A6175D41CF6C424F5DD88C5FD8ED6 /* DNPopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F17EB1E5026EA7EDE4BA4DDE556BA8 /* DNPopOperation.m */; };
-		D5386028D2EF7FB7AD8AF6026A63E163 /* DNPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0410B22E669868EFA08E4DE88CB7DF /* DNPopView.m */; };
-		D692103C255C5B583718F482CD1908DE /* Pods-DNPop_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7EC47E83E43EFED145BB84BD3D3476 /* Pods-DNPop_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA4FDB21C8A622F43B7DC216CE3602D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		E09A41C20D570345FC263DC726B9F68F /* DNPop.h in Headers */ = {isa = PBXBuildFile; fileRef = F6037CB86B769CA0C64BDAF49065AFBC /* DNPop.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5BC479B4BDF415E849661B42B31E13B /* DNPopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0A30E44989084800339B514A265828 /* DNPopOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01EE84ADED71963D51A3CCAAD2596E4F /* DNPopAlertDismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FB64BBD705B9473B624EBE70765EA6 /* DNPopAlertDismissAnimator.m */; };
+		0B21A5DFF222F58DAB0E97B9DC3BEA0F /* Pods-DNPop_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4C5279C462A365D626657029E147A2 /* Pods-DNPop_Example-dummy.m */; };
+		20BF896D62F3CA7C5C53E239A6637486 /* DNPopActionSheetDismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE7DC9316B38267D054AB563F8858B8 /* DNPopActionSheetDismissAnimator.m */; };
+		255D07FE3C669DA6B0E492D90C594156 /* DNPopStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A708F8A8475BA1797DF95F1DCB60CB89 /* DNPopStyle.m */; };
+		2657B74A6EE8F6DB55EAFA5CD7A27CEC /* DNPopActionSheetView.h in Headers */ = {isa = PBXBuildFile; fileRef = 28556ED79CC429A728F5691395CF84EC /* DNPopActionSheetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2987CD79D9079B1D85E41293554432A1 /* DNPopActionSheetDismissAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = E3A549B3B5B385249DCEF9BC09C440AA /* DNPopActionSheetDismissAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A2BA50ED1597AC9C244EBEDCA129DC6 /* DNPopDismissBaseAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 764952308E7D23B1BA9A5EFC8FBE1A20 /* DNPopDismissBaseAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BF8FD15948F217A6AB17432DEAE00A0 /* DNPopOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 48098C4D816A6AC4019AEA9E03F593F9 /* DNPopOperationQueue.m */; };
+		2E832187F338B0419D5F03B02F183E79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		30015B2831B8B8CB6649F3C9FE3911F3 /* DNPopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DD141897D48E9CA1C6500C62DCDDB6F8 /* DNPopViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BD08E013DBAACE673CEF835CC9F9059 /* DNPopAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 074AB4486261885300AC2440384F0847 /* DNPopAction.m */; };
+		44D27E766856A3BB1BDA7E52E263A663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		488BDEB48D41B36572F0E2F976368AC6 /* DNPopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F17EB1E5026EA7EDE4BA4DDE556BA8 /* DNPopOperation.m */; };
+		5084C76D671B3C4B051A90B81CADCC62 /* DNPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0825CE8853FC1883094B6C7746EB6A30 /* DNPopViewController.m */; };
+		50EB2BAB7A7378B51F7EDAE18E4905AF /* DNPopOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 83A2ECB4FBF87008338B6D62C6E2B8C4 /* DNPopOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57CD2B7F6B8448E4DE82CE2B40690CF9 /* Pods-DNPop_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7EC47E83E43EFED145BB84BD3D3476 /* Pods-DNPop_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65335B23D7B239D6A24AD6E7BC8AA515 /* DNPopAlertDismissAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 927C59DB7A4C41C78A558C00BAAB311E /* DNPopAlertDismissAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DC122A8094E2871F50E0B6DF27929F4 /* DNPopAlertPresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD47BBA9E5014E303EDEB86A4B466DE /* DNPopAlertPresentAnimator.m */; };
+		73B72E31216097E917A6D4DD5B679B26 /* DNPopAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 218CF3FBA416737DA43003BB8E217C97 /* DNPopAlertView.m */; };
+		7A140485A68DB7A14D3CDD02FF2142E5 /* Pods-DNPop_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAA86EBEC973C51292F9E9B03448DA /* Pods-DNPop_Tests-dummy.m */; };
+		83ABEB2AA25A68653DCD5E1BD1984BE4 /* DNPopActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B7C3A5326AB044516A533611C961D /* DNPopActionSheetView.m */; };
+		87BEE213D908A7796E9CBB59FCF056DD /* DNPopAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB4A177605F6DC4E576F3AAE90B0342 /* DNPopAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C4FE8748D5F0F09D7FE29C8F7F4AE7E /* DNPopActionSheetPresentAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4137C5571A9AD2F0DA8E797538AB92D5 /* DNPopActionSheetPresentAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E6A097AF68F86228D41DA31E052173D /* DNPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB17E53F80C363C511BBFD8A87C91CD /* DNPopView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F2CB8C94D02A775D3657F098B277DAF /* DNPop.m in Sources */ = {isa = PBXBuildFile; fileRef = 762EEEBEA19AD70001BF90AB57433241 /* DNPop.m */; };
+		91EBEF38B1AAC4FFA87AEB80EBD88B62 /* DNPop.h in Headers */ = {isa = PBXBuildFile; fileRef = F6037CB86B769CA0C64BDAF49065AFBC /* DNPop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9269B6F8BB1C19CEF1F494803EAB345C /* DNPop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8285530E3DE7C8604D816A9A5503A108 /* DNPop-dummy.m */; };
+		9354C956869683F9C82DC62D8AEBCB03 /* DNPopActionSheetPresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6711B2FAE5EF312DE8247C4AB3CAABDF /* DNPopActionSheetPresentAnimator.m */; };
+		9DD123059F5E00226446F3BE1FDAA00B /* DNPopStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EC6D2AAF860CA22A5F40B32E915450D /* DNPopStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FBF17FA66CAC714D7E411C9631F5887 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A22B8D42D60577F992E79A1C789BD54A /* DNPopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0A30E44989084800339B514A265828 /* DNPopOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A57810B4304288796D5F78B8F15DB564 /* Pods-DNPop_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A035742D1A109CBB07DEAE913E5AA33 /* Pods-DNPop_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABCC9B34964401EDBE9A415DA7A5DC91 /* DNPopAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = D50CA2DB2BA872E57E107D54B09E876A /* DNPopAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B41377B547800B21A182B392A6D78714 /* DNPopAlertPresentAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 217412763349D8793140EA1B6D5550E4 /* DNPopAlertPresentAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA39111FC34A95A6B10A47AC9895352 /* DNPopItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E9A13C46C1DE2D6A07D470993E752DC /* DNPopItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7B5B8C6986B70CC6753F1152150B06 /* DNPopPresentBaseAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E28FF5FACC5644A154A4FC3FDCA400FE /* DNPopPresentBaseAnimator.m */; };
+		D7FE508B5D5EB32BBAE031D7B866EA89 /* DNPopDismissBaseAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E92CDB85F11D3380C81959CB2D4BBD6B /* DNPopDismissBaseAnimator.m */; };
+		F57CB6D85F95371E291FE1FAEABFFBC3 /* DNPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0410B22E669868EFA08E4DE88CB7DF /* DNPopView.m */; };
+		F8D0820D09EFA936ACB88E80A0022522 /* DNPopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C441B6E06140E67A9278A3060652D0 /* DNPopItem.m */; };
+		FB7289144CE2EAC3D0B095408C6762F8 /* DNPopPresentBaseAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 17594F17596640F98BC5BD0221763C0F /* DNPopPresentBaseAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD7C4F485FA0C70F55334FB2FAE478D /* DNPop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E533E17A0F8308E530B5EC9DB0400F /* DNPop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		58EA17D9711E68F72F1540187AF61488 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0B270ECBF1B090547682F23A20ADC3FC;
-			remoteInfo = "Pods-DNPop_Example";
-		};
-		EAB8ABAA5AD5BF354172D84C6C593545 /* PBXContainerItemProxy */ = {
+		E463DD822B7BAA6EFBCD951B86302D6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DACA273B47F628AD2A1CE76FBFB9F4F1;
 			remoteInfo = DNPop;
+		};
+		F7C1DF717B4DDCD0047225F54322C369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B270ECBF1B090547682F23A20ADC3FC;
+			remoteInfo = "Pods-DNPop_Example";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -134,27 +134,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		10C9F7BB1AC1B55DEB3895BDC7CC0B84 /* Frameworks */ = {
+		3533741386F0DB5088BD603D1829B722 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F565208EA7F1FA970A74445885E6ED /* Foundation.framework in Frameworks */,
+				2E832187F338B0419D5F03B02F183E79 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8EFE0877636E128E47409D52F7D55AD /* Frameworks */ = {
+		69A8A33E70A62ED304B855315212BE0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60C1D0C7D88BDB05B15D62980E30399B /* Foundation.framework in Frameworks */,
+				44D27E766856A3BB1BDA7E52E263A663 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF54E89AB3C8FF0207AD8CF222E55C99 /* Frameworks */ = {
+		82A8267A0CD8E2AECB2E67E897BCE87A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA4FDB21C8A622F43B7DC216CE3602D3 /* Foundation.framework in Frameworks */,
+				9FBF17FA66CAC714D7E411C9631F5887 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,16 +234,16 @@
 		9D2427D901584C03DEC8E65768256567 /* VIew */ = {
 			isa = PBXGroup;
 			children = (
-				7EC6D2AAF860CA22A5F40B32E915450D /* DNPopStyle.h */,
-				A708F8A8475BA1797DF95F1DCB60CB89 /* DNPopStyle.m */,
-				3E9A13C46C1DE2D6A07D470993E752DC /* DNPopItem.h */,
-				F4C441B6E06140E67A9278A3060652D0 /* DNPopItem.m */,
-				6EB17E53F80C363C511BBFD8A87C91CD /* DNPopView.h */,
-				2F0410B22E669868EFA08E4DE88CB7DF /* DNPopView.m */,
-				D50CA2DB2BA872E57E107D54B09E876A /* DNPopAlertView.h */,
-				218CF3FBA416737DA43003BB8E217C97 /* DNPopAlertView.m */,
 				28556ED79CC429A728F5691395CF84EC /* DNPopActionSheetView.h */,
 				8C2B7C3A5326AB044516A533611C961D /* DNPopActionSheetView.m */,
+				D50CA2DB2BA872E57E107D54B09E876A /* DNPopAlertView.h */,
+				218CF3FBA416737DA43003BB8E217C97 /* DNPopAlertView.m */,
+				3E9A13C46C1DE2D6A07D470993E752DC /* DNPopItem.h */,
+				F4C441B6E06140E67A9278A3060652D0 /* DNPopItem.m */,
+				7EC6D2AAF860CA22A5F40B32E915450D /* DNPopStyle.h */,
+				A708F8A8475BA1797DF95F1DCB60CB89 /* DNPopStyle.m */,
+				6EB17E53F80C363C511BBFD8A87C91CD /* DNPopView.h */,
+				2F0410B22E669868EFA08E4DE88CB7DF /* DNPopView.m */,
 			);
 			name = VIew;
 			path = DNPop/Classes/VIew;
@@ -362,43 +362,43 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		AF31971F61FE798B41F2C6E8455DAA31 /* Headers */ = {
+		0FD9FF313A75FDC92D10AF7EA82B2CA5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94533D1C6F70BC08B2AA696BF62CF977 /* DNPop-umbrella.h in Headers */,
-				E09A41C20D570345FC263DC726B9F68F /* DNPop.h in Headers */,
-				74E67E952CDF7FA9F2D5C7816DA568AD /* DNPopAction.h in Headers */,
-				CD01937CE68D3593C4A2BECBFEDF010E /* DNPopActionSheetDismissAnimator.h in Headers */,
-				5C6B2A4632374B5E0CB9BB6F8F6DD939 /* DNPopActionSheetPresentAnimator.h in Headers */,
-				BB52F51FB9E9AF9A190E49CD3229EEE7 /* DNPopActionSheetView.h in Headers */,
-				87B48501D13317A5385F8DA4EF10461A /* DNPopAlertDismissAnimator.h in Headers */,
-				99C9D9458FD2815A8B25D2F359964D20 /* DNPopAlertPresentAnimator.h in Headers */,
-				B21B83AAB0DFA643AF5036C68B9A2C8B /* DNPopAlertView.h in Headers */,
-				C8C54FB7F356F92A255E5899474DA586 /* DNPopDismissBaseAnimator.h in Headers */,
-				661A898975D5FE1DEC0884A05A525034 /* DNPopItem.h in Headers */,
-				E5BC479B4BDF415E849661B42B31E13B /* DNPopOperation.h in Headers */,
-				1D16F1FF0976E634D2111E50DCBEE1E3 /* DNPopOperationQueue.h in Headers */,
-				488EBF876979F98C3A130AAD706608D2 /* DNPopPresentBaseAnimator.h in Headers */,
-				0253B51B0DFB5EC740D7639AFD4FD9B3 /* DNPopStyle.h in Headers */,
-				50A60EF9D09276BC87E491413039F451 /* DNPopView.h in Headers */,
-				6E1A702191F79D403205D1F185F49B7B /* DNPopViewController.h in Headers */,
+				FFD7C4F485FA0C70F55334FB2FAE478D /* DNPop-umbrella.h in Headers */,
+				91EBEF38B1AAC4FFA87AEB80EBD88B62 /* DNPop.h in Headers */,
+				87BEE213D908A7796E9CBB59FCF056DD /* DNPopAction.h in Headers */,
+				2987CD79D9079B1D85E41293554432A1 /* DNPopActionSheetDismissAnimator.h in Headers */,
+				8C4FE8748D5F0F09D7FE29C8F7F4AE7E /* DNPopActionSheetPresentAnimator.h in Headers */,
+				2657B74A6EE8F6DB55EAFA5CD7A27CEC /* DNPopActionSheetView.h in Headers */,
+				65335B23D7B239D6A24AD6E7BC8AA515 /* DNPopAlertDismissAnimator.h in Headers */,
+				B41377B547800B21A182B392A6D78714 /* DNPopAlertPresentAnimator.h in Headers */,
+				ABCC9B34964401EDBE9A415DA7A5DC91 /* DNPopAlertView.h in Headers */,
+				2A2BA50ED1597AC9C244EBEDCA129DC6 /* DNPopDismissBaseAnimator.h in Headers */,
+				BFA39111FC34A95A6B10A47AC9895352 /* DNPopItem.h in Headers */,
+				A22B8D42D60577F992E79A1C789BD54A /* DNPopOperation.h in Headers */,
+				50EB2BAB7A7378B51F7EDAE18E4905AF /* DNPopOperationQueue.h in Headers */,
+				FB7289144CE2EAC3D0B095408C6762F8 /* DNPopPresentBaseAnimator.h in Headers */,
+				9DD123059F5E00226446F3BE1FDAA00B /* DNPopStyle.h in Headers */,
+				8E6A097AF68F86228D41DA31E052173D /* DNPopView.h in Headers */,
+				30015B2831B8B8CB6649F3C9FE3911F3 /* DNPopViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB77DE479B29ADB9583941A076FE6939 /* Headers */ = {
+		3E1BD1C5A93FB66585BC63699DAF6FAE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D692103C255C5B583718F482CD1908DE /* Pods-DNPop_Tests-umbrella.h in Headers */,
+				57CD2B7F6B8448E4DE82CE2B40690CF9 /* Pods-DNPop_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F01235B92C55B003257032A1F0DA12F3 /* Headers */ = {
+		5BAFDAA97B7F7B5B7411DC54EA612C8C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23C8E2D72E16B03D1C7AAB3291E27EDA /* Pods-DNPop_Example-umbrella.h in Headers */,
+				A57810B4304288796D5F78B8F15DB564 /* Pods-DNPop_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,17 +407,17 @@
 /* Begin PBXNativeTarget section */
 		0B270ECBF1B090547682F23A20ADC3FC /* Pods-DNPop_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C83D20718F1282CD8EF09901046D562C /* Build configuration list for PBXNativeTarget "Pods-DNPop_Example" */;
+			buildConfigurationList = 1B27D27D7BDD956D73507F9CD2566A13 /* Build configuration list for PBXNativeTarget "Pods-DNPop_Example" */;
 			buildPhases = (
-				F01235B92C55B003257032A1F0DA12F3 /* Headers */,
-				E347BF1578DBD27832F0AAD05CE0DCF6 /* Sources */,
-				C8EFE0877636E128E47409D52F7D55AD /* Frameworks */,
-				BDD8918BEFCCEA69293CD2B70A7BF54D /* Resources */,
+				5BAFDAA97B7F7B5B7411DC54EA612C8C /* Headers */,
+				6CA2ECDC997FF169E53D1DBD9B26CCBD /* Sources */,
+				3533741386F0DB5088BD603D1829B722 /* Frameworks */,
+				D69467EEEB5C74E82F0D9069717F47FE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B35DF34DFB7BB84AC3379D4CDB34E116 /* PBXTargetDependency */,
+				F406AFAB47C5C7E57C320B0DA2A43D1F /* PBXTargetDependency */,
 			);
 			name = "Pods-DNPop_Example";
 			productName = "Pods-DNPop_Example";
@@ -426,17 +426,17 @@
 		};
 		22BB613393852905E117F99DEA0C61A1 /* Pods-DNPop_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD56F47EA930E61D4E01A8B81785125E /* Build configuration list for PBXNativeTarget "Pods-DNPop_Tests" */;
+			buildConfigurationList = 300A401D1091ECF8020ABDE3D58A3340 /* Build configuration list for PBXNativeTarget "Pods-DNPop_Tests" */;
 			buildPhases = (
-				BB77DE479B29ADB9583941A076FE6939 /* Headers */,
-				43A4DDAB339E1709ADFC823FA7A26374 /* Sources */,
-				FF54E89AB3C8FF0207AD8CF222E55C99 /* Frameworks */,
-				457EDDF2752E9C201F191510255415C7 /* Resources */,
+				3E1BD1C5A93FB66585BC63699DAF6FAE /* Headers */,
+				FC00552A00F4F972EA6BEC611F0E5CEA /* Sources */,
+				82A8267A0CD8E2AECB2E67E897BCE87A /* Frameworks */,
+				00697FF3AE11553F053AB222D34AADBA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EE87E85105C2968B8B0B9B1946A0198C /* PBXTargetDependency */,
+				4D39CDC7A51C83DF3F70EB799176ABA8 /* PBXTargetDependency */,
 			);
 			name = "Pods-DNPop_Tests";
 			productName = "Pods-DNPop_Tests";
@@ -445,12 +445,12 @@
 		};
 		DACA273B47F628AD2A1CE76FBFB9F4F1 /* DNPop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F889D394F419F4186766AC11EBBC9FB /* Build configuration list for PBXNativeTarget "DNPop" */;
+			buildConfigurationList = 3F3429903CD8235A68FFCEF6D735EB68 /* Build configuration list for PBXNativeTarget "DNPop" */;
 			buildPhases = (
-				AF31971F61FE798B41F2C6E8455DAA31 /* Headers */,
-				72E983EFFDE5CEC37FC77DFFAE7157FA /* Sources */,
-				10C9F7BB1AC1B55DEB3895BDC7CC0B84 /* Frameworks */,
-				F7A0422086C4AAF1AED45A94FB3B5810 /* Resources */,
+				0FD9FF313A75FDC92D10AF7EA82B2CA5 /* Headers */,
+				32D9AB685CB39E4F74518461248AAA97 /* Sources */,
+				69A8A33E70A62ED304B855315212BE0A /* Frameworks */,
+				A6FB32D67C3AF27A5461DC4A0AE38086 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -467,8 +467,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -490,21 +490,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		457EDDF2752E9C201F191510255415C7 /* Resources */ = {
+		00697FF3AE11553F053AB222D34AADBA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BDD8918BEFCCEA69293CD2B70A7BF54D /* Resources */ = {
+		A6FB32D67C3AF27A5461DC4A0AE38086 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7A0422086C4AAF1AED45A94FB3B5810 /* Resources */ = {
+		D69467EEEB5C74E82F0D9069717F47FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -514,67 +514,67 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		43A4DDAB339E1709ADFC823FA7A26374 /* Sources */ = {
+		32D9AB685CB39E4F74518461248AAA97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03EACDF6FBC98028F06186CAE63BF84C /* Pods-DNPop_Tests-dummy.m in Sources */,
+				9269B6F8BB1C19CEF1F494803EAB345C /* DNPop-dummy.m in Sources */,
+				8F2CB8C94D02A775D3657F098B277DAF /* DNPop.m in Sources */,
+				3BD08E013DBAACE673CEF835CC9F9059 /* DNPopAction.m in Sources */,
+				20BF896D62F3CA7C5C53E239A6637486 /* DNPopActionSheetDismissAnimator.m in Sources */,
+				9354C956869683F9C82DC62D8AEBCB03 /* DNPopActionSheetPresentAnimator.m in Sources */,
+				83ABEB2AA25A68653DCD5E1BD1984BE4 /* DNPopActionSheetView.m in Sources */,
+				01EE84ADED71963D51A3CCAAD2596E4F /* DNPopAlertDismissAnimator.m in Sources */,
+				6DC122A8094E2871F50E0B6DF27929F4 /* DNPopAlertPresentAnimator.m in Sources */,
+				73B72E31216097E917A6D4DD5B679B26 /* DNPopAlertView.m in Sources */,
+				D7FE508B5D5EB32BBAE031D7B866EA89 /* DNPopDismissBaseAnimator.m in Sources */,
+				F8D0820D09EFA936ACB88E80A0022522 /* DNPopItem.m in Sources */,
+				488BDEB48D41B36572F0E2F976368AC6 /* DNPopOperation.m in Sources */,
+				2BF8FD15948F217A6AB17432DEAE00A0 /* DNPopOperationQueue.m in Sources */,
+				CC7B5B8C6986B70CC6753F1152150B06 /* DNPopPresentBaseAnimator.m in Sources */,
+				255D07FE3C669DA6B0E492D90C594156 /* DNPopStyle.m in Sources */,
+				F57CB6D85F95371E291FE1FAEABFFBC3 /* DNPopView.m in Sources */,
+				5084C76D671B3C4B051A90B81CADCC62 /* DNPopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72E983EFFDE5CEC37FC77DFFAE7157FA /* Sources */ = {
+		6CA2ECDC997FF169E53D1DBD9B26CCBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE2C917F435E8E704A24AB7E8EE87E4 /* DNPop-dummy.m in Sources */,
-				10CF9243E7E600D161DAA110F1B0B8DF /* DNPop.m in Sources */,
-				81269A7201B1FB2861665C7AD7895E44 /* DNPopAction.m in Sources */,
-				CF8B530B2F73A711C3D1E4D9D5327332 /* DNPopActionSheetDismissAnimator.m in Sources */,
-				2490C2A0FA85EBE34AAD0F45CD816E92 /* DNPopActionSheetPresentAnimator.m in Sources */,
-				290CC6D96EEB0F6D979C798147328AC2 /* DNPopActionSheetView.m in Sources */,
-				76587F5CC5BD54F9142FE4FE288F6676 /* DNPopAlertDismissAnimator.m in Sources */,
-				31FEA0F8572FFB53F41E748919528FCD /* DNPopAlertPresentAnimator.m in Sources */,
-				AE1CE58A45652FFBFAADCD49EDF3EEF7 /* DNPopAlertView.m in Sources */,
-				B0024A6B921D8261799020748F06252F /* DNPopDismissBaseAnimator.m in Sources */,
-				55B4A08880B4C096BD38EF7AEF6F02B3 /* DNPopItem.m in Sources */,
-				D52A6175D41CF6C424F5DD88C5FD8ED6 /* DNPopOperation.m in Sources */,
-				1D2FCEEA7363856810DB0D2E6716DF38 /* DNPopOperationQueue.m in Sources */,
-				B1090CBFDCA3A59E47C1F45FE6BFF623 /* DNPopPresentBaseAnimator.m in Sources */,
-				BABDB94B0026EFBFB73C99AA0C5DA153 /* DNPopStyle.m in Sources */,
-				D5386028D2EF7FB7AD8AF6026A63E163 /* DNPopView.m in Sources */,
-				293D18EECAC1C080E558B43D40AF5802 /* DNPopViewController.m in Sources */,
+				0B21A5DFF222F58DAB0E97B9DC3BEA0F /* Pods-DNPop_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E347BF1578DBD27832F0AAD05CE0DCF6 /* Sources */ = {
+		FC00552A00F4F972EA6BEC611F0E5CEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F187E646343E3CAA4039EBC8AF41AD4 /* Pods-DNPop_Example-dummy.m in Sources */,
+				7A140485A68DB7A14D3CDD02FF2142E5 /* Pods-DNPop_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B35DF34DFB7BB84AC3379D4CDB34E116 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DNPop;
-			target = DACA273B47F628AD2A1CE76FBFB9F4F1 /* DNPop */;
-			targetProxy = EAB8ABAA5AD5BF354172D84C6C593545 /* PBXContainerItemProxy */;
-		};
-		EE87E85105C2968B8B0B9B1946A0198C /* PBXTargetDependency */ = {
+		4D39CDC7A51C83DF3F70EB799176ABA8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-DNPop_Example";
 			target = 0B270ECBF1B090547682F23A20ADC3FC /* Pods-DNPop_Example */;
-			targetProxy = 58EA17D9711E68F72F1540187AF61488 /* PBXContainerItemProxy */;
+			targetProxy = F7C1DF717B4DDCD0047225F54322C369 /* PBXContainerItemProxy */;
+		};
+		F406AFAB47C5C7E57C320B0DA2A43D1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DNPop;
+			target = DACA273B47F628AD2A1CE76FBFB9F4F1 /* DNPop */;
+			targetProxy = E463DD822B7BAA6EFBCD951B86302D6B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3395DCBA291EB2D4CFD5A292CECA43F0 /* Debug */ = {
+		02DF945EB79E059F7B5D14B4BF062CD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D05F68413797F409F0AC7BA3BB7FEE7 /* Pods-DNPop_Example.debug.xcconfig */;
+			baseConfigurationReference = 00916C852CAA15E25467DECB4C9E027E /* Pods-DNPop_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -586,12 +586,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DNPop_Example/Pods-DNPop_Example-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-DNPop_Tests/Pods-DNPop_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DNPop_Example/Pods-DNPop_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-DNPop_Tests/Pods-DNPop_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -605,10 +605,11 @@
 			};
 			name = Debug;
 		};
-		40B753C4A50C5FE7AEDDB47FD91C69EB /* Release */ = {
+		38A9BA332B508FD26DDB109EA5C47CCC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD3905E10E2A38D2C54E842332940089 /* DNPop.xcconfig */;
+			baseConfigurationReference = 30F97A346AA574EA8EDB3C75082D7458 /* Pods-DNPop_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -618,17 +619,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DNPop/DNPop-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DNPop/DNPop-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-DNPop_Tests/Pods-DNPop_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DNPop/DNPop.modulemap";
-				PRODUCT_MODULE_NAME = DNPop;
-				PRODUCT_NAME = DNPop;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DNPop_Tests/Pods-DNPop_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -695,6 +698,36 @@
 			};
 			name = Release;
 		};
+		7AC397406E9119FBA87E7C1D0BF42EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD3905E10E2A38D2C54E842332940089 /* DNPop.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DNPop/DNPop-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DNPop/DNPop-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DNPop/DNPop.modulemap";
+				PRODUCT_MODULE_NAME = DNPop;
+				PRODUCT_NAME = DNPop;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -759,37 +792,7 @@
 			};
 			name = Debug;
 		};
-		8F89CF7B826849EED3434D8211911650 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD3905E10E2A38D2C54E842332940089 /* DNPop.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DNPop/DNPop-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DNPop/DNPop-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DNPop/DNPop.modulemap";
-				PRODUCT_MODULE_NAME = DNPop;
-				PRODUCT_NAME = DNPop;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B67AA3BC51ACE71719279D2B0CDF297C /* Release */ = {
+		A4870218DED3FB19465821F648973448 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F599D97F0B19EB23EFFD694E8D030AB9 /* Pods-DNPop_Example.release.xcconfig */;
 			buildSettings = {
@@ -823,9 +826,9 @@
 			};
 			name = Release;
 		};
-		D62B7BBA6E117A07DDAB0BB069ADFA2F /* Release */ = {
+		B5004009658236BA9EE36A0CB93F6BA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30F97A346AA574EA8EDB3C75082D7458 /* Pods-DNPop_Tests.release.xcconfig */;
+			baseConfigurationReference = 0D05F68413797F409F0AC7BA3BB7FEE7 /* Pods-DNPop_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -837,46 +840,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DNPop_Tests/Pods-DNPop_Tests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-DNPop_Example/Pods-DNPop_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DNPop_Tests/Pods-DNPop_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F5690A9E71F308F6E42F0C7B65B6893E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00916C852CAA15E25467DECB4C9E027E /* Pods-DNPop_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DNPop_Tests/Pods-DNPop_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DNPop_Tests/Pods-DNPop_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-DNPop_Example/Pods-DNPop_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -890,41 +859,72 @@
 			};
 			name = Debug;
 		};
+		DED17A7F961413177BDB9AC029549AA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD3905E10E2A38D2C54E842332940089 /* DNPop.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DNPop/DNPop-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DNPop/DNPop-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DNPop/DNPop.modulemap";
+				PRODUCT_MODULE_NAME = DNPop;
+				PRODUCT_NAME = DNPop;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1B27D27D7BDD956D73507F9CD2566A13 /* Build configuration list for PBXNativeTarget "Pods-DNPop_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5004009658236BA9EE36A0CB93F6BA8 /* Debug */,
+				A4870218DED3FB19465821F648973448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		300A401D1091ECF8020ABDE3D58A3340 /* Build configuration list for PBXNativeTarget "Pods-DNPop_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DF945EB79E059F7B5D14B4BF062CD4 /* Debug */,
+				38A9BA332B508FD26DDB109EA5C47CCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F3429903CD8235A68FFCEF6D735EB68 /* Build configuration list for PBXNativeTarget "DNPop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AC397406E9119FBA87E7C1D0BF42EB6 /* Debug */,
+				DED17A7F961413177BDB9AC029549AA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
 				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6F889D394F419F4186766AC11EBBC9FB /* Build configuration list for PBXNativeTarget "DNPop" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8F89CF7B826849EED3434D8211911650 /* Debug */,
-				40B753C4A50C5FE7AEDDB47FD91C69EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C83D20718F1282CD8EF09901046D562C /* Build configuration list for PBXNativeTarget "Pods-DNPop_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3395DCBA291EB2D4CFD5A292CECA43F0 /* Debug */,
-				B67AA3BC51ACE71719279D2B0CDF297C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CD56F47EA930E61D4E01A8B81785125E /* Build configuration list for PBXNativeTarget "Pods-DNPop_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F5690A9E71F308F6E42F0C7B65B6893E /* Debug */,
-				D62B7BBA6E117A07DDAB0BB069ADFA2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

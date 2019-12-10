@@ -1,8 +1,7 @@
 {
   "name": "DNPop",
-  "version": "0.1.0.2",
+  "version": "1.0.0.12",
   "summary": "A short description of DNPop.",
-  "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/DoNewsCode/DNPop",
   "license": {
     "type": "MIT",
@@ -13,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/DoNewsCode/DNPop.git",
-    "tag": "0.1.0.2"
+    "tag": "1.0.0.12"
   },
   "platforms": {
     "ios": "8.0"

@@ -63,6 +63,15 @@
     [self.view addSubview:button3];
     [button3 addTarget:self action:@selector(eventButton3Click:) forControlEvents:UIControlEventTouchUpInside];
     
+    UIButton *button4 = [UIButton buttonWithType:UIButtonTypeCustom];
+       button4.titleLabel.numberOfLines = 0;
+       button4.backgroundColor = [UIColor blueColor];
+       [button4 setTitle:@"D" forState:UIControlStateNormal];
+       button4.titleLabel.font = [UIFont systemFontOfSize:18.];
+       button4.frame = (CGRect){130,215,100,100};
+       [self.view addSubview:button4];
+       [button4 addTarget:self action:@selector(eventButton4Click:) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
 - (void)createSystomAlert {
@@ -111,6 +120,39 @@
     
 }
 
+
+- (void)createCustomHorizontalAlert {
+    
+    DNPopStyle *alertStyle = [DNPopStyle new];
+    alertStyle.dividingLine = YES;
+    alertStyle.alertheight = 160;
+    alertStyle.actionSort = DNPopStyleActionSortByHorizontal;
+    DNPopViewController *customAlertController = [DNPopViewController alertControllerWithTitle:@"这里添加标题" message:nil preferredStyle:DNPopViewControllerStyleAlert];
+    customAlertController.alertStyle = alertStyle;
+    
+    customAlertController.presentStyle = DNPopPresentStyleSystem;
+    customAlertController.dismissStyle = DNPopDismissStyleFadeOut;
+    customAlertController.backgroundCancel = NO;
+//    DNTestAlertAction *alertAction = [DNTestAlertAction actionWithViewHandler:^(UIButton * _Nonnull button) {
+//        NSLog(@"点击了：%@",button.titleLabel.text);
+//        customAlertController.handler(customAlertController);
+//    }];
+//    alertAction.style = DNPopActionStyleCustom;
+//    [customAlertController addAction:alertAction];
+    
+    DNPopAction *alertAction2 = [DNPopAction actionWithTitle:@"好的" style:DNPopActionStyleDefault handler:^{
+        customAlertController.handler(customAlertController);
+    }];
+    [customAlertController addAction:alertAction2];
+    
+    DNPopAction *alertAction3 = [DNPopAction actionWithTitle:@"取消" style:DNPopActionStyleCancel handler:^{
+        customAlertController.handler(customAlertController);
+    }];
+    [customAlertController addAction:alertAction3];
+    //
+    [DNPop insertAlertController:customAlertController];
+    
+}
 
 - (void)createCustomActionSheet {
     DNPopStyle *alertStyle = [DNPopStyle new];
@@ -175,5 +217,10 @@
 
 - (void)eventButton3Click:(UIButton *)button {
     NSLog(@"eventButton3Click");
+}
+
+- (void)eventButton4Click:(UIButton *)button {
+    NSLog(@"eventButton3Click");
+    [self createCustomHorizontalAlert];
 }
 @end

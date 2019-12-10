@@ -8,8 +8,15 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+/// Action 排列方式
+typedef NS_ENUM(NSUInteger, DNPopStyleActionSort) {
+    DNPopStyleActionSortByVertical,   // 垂直
+    DNPopStyleActionSortByHorizontal,      // 水平
+};
 
 @interface DNPopStyle : NSObject
+/// Action 排列方式 默认垂直（DNPopStyleActionSortByVertical）
+@property(nonatomic, assign) DNPopStyleActionSort actionSort;
 
 /** 两侧圆角，默认：CGSizeMake(20, 20) */
 @property(nonatomic, assign) CGSize cornerRadii;
@@ -26,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** Alert宽度 仅在非未添加Custom的Action状态下生效，包含自定义的Action时其宽度跟随自定义Action中的Item宽度 默认：270 */
 @property(nonatomic, assign) CGFloat alertWidth;
+/** Alert最小高度 仅在非未添加Custom的Action状态下生效，包含自定义的Action时其宽度跟随自定义Action中的Item高度 默认：0  自适应 */
+@property(nonatomic, assign) CGFloat alertheight;
 
 /** 背景颜色,默认：[UIColor whiteColor]; */
 @property(nonatomic, copy) UIColor *backgroundColor;

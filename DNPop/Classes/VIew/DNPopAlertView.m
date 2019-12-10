@@ -64,51 +64,110 @@
         line.backgroundColor = self.alertStyle.dividingLineColor.CGColor;
         CGFloat lineHeight = self.alertStyle.headerLineHeight;
         CGFloat lineX = self.alertStyle.headerLineRightMargin;
+        if (self.alertStyle.actionSort == DNPopStyleActionSortByHorizontal) {
+            DNPopAction *action = self.alertActions.firstObject;
+            UIView *item = action.item;
+            CGFloat actionHeight = item.frame.size.height;
+            if (self.alertStyle.alertheight > 0 && (previousItemMaxY + actionHeight) < self.alertStyle.alertheight) {
+                previousItemMaxY = self.alertStyle.alertheight - actionHeight - lineHeight;
+            }
+        }
         line.frame = (CGRect){lineX,previousItemMaxY,maxWidth - self.alertStyle.headerLineRightMargin - self.alertStyle.headerLineLeftMargin,lineHeight};
         [self.layer addSublayer:line];
         previousItemMaxY += (lineHeight);
     }
     
-    for (NSInteger i = 0; i < self.alertActions.count; i++) {
-        
-        DNPopAction *action = self.alertActions[i];
+    if (self.alertStyle.actionSort == DNPopStyleActionSortByVertical) {
+        for (NSInteger i = 0; i < self.alertActions.count; i++) {
+            
+            DNPopAction *action = self.alertActions[i];
+            UIView *item = action.item;
+            if (action.style == DNPopActionStyleDefault) {
+                DNPopItem *defaultItem = (DNPopItem *)item;
+                defaultItem.frame = (CGRect){self.alertStyle.horizontalSpacing,previousItemMaxY,maxWidth - self.alertStyle.horizontalSpacing * 2,item.frame.size.height};
+                defaultItem.titleLabel.font = self.alertStyle.defaultFont;
+                defaultItem.titleLabel.textColor = self.alertStyle.defaultTextColor;
+                defaultItem.titleLabel.frame = defaultItem.bounds;
+                
+            } else if (action.style == DNPopActionStyleCancel) {
+                DNPopItem *defaultItem = (DNPopItem *)item;
+                defaultItem.frame = (CGRect){self.alertStyle.horizontalSpacing,previousItemMaxY,maxWidth - self.alertStyle.horizontalSpacing * 2,item.frame.size.height};
+                defaultItem.titleLabel.font = self.alertStyle.cancelFont;
+                defaultItem.titleLabel.textColor = self.alertStyle.cancelTextColor;
+                defaultItem.titleLabel.frame = defaultItem.bounds;
+                
+            } else if (action.style == DNPopActionStyleCustom) {
+                item.frame = (CGRect){0,previousItemMaxY,item.frame.size.width,item.frame.size.height};
+                item.center = CGPointMake(self.center.x, item.center.y);
+                
+            } else {
+                item.frame = (CGRect){0,previousItemMaxY,item.frame.size.width,item.frame.size.height};
+                item.center = CGPointMake(self.center.x, item.center.y);
+            }
+            
+            previousItemMaxY += item.frame.size.height;
+            
+            if (self.alertStyle.dividingLine && i < self.alertActions.count - 1) {
+                CALayer *line = [CALayer new];
+                line.backgroundColor = self.alertStyle.dividingLineColor.CGColor;
+                CGFloat lineHeight = self.alertStyle.dividingLineHeight;
+                CGFloat lineX = self.alertStyle.dividingLineRightMargin;
+                line.frame = (CGRect){lineX,previousItemMaxY,self.frame.size.width - self.alertStyle.dividingLineRightMargin - self.alertStyle.dividingLineLeftMargin,lineHeight};
+                [self.layer addSublayer:line];
+                previousItemMaxY += (lineHeight + self.alertStyle.verticalVSpacing);
+            }
+            
+        }
+    } else {
+        DNPopAction *action = self.alertActions.firstObject;
         UIView *item = action.item;
-        if (action.style == DNPopActionStyleDefault) {
-            DNPopItem *defaultItem = (DNPopItem *)item;
-            defaultItem.frame = (CGRect){self.alertStyle.horizontalSpacing,previousItemMaxY,maxWidth - self.alertStyle.horizontalSpacing * 2,item.frame.size.height};
-            defaultItem.titleLabel.font = self.alertStyle.defaultFont;
-            defaultItem.titleLabel.textColor = self.alertStyle.defaultTextColor;
-            defaultItem.titleLabel.frame = defaultItem.bounds;
+        CGFloat actionHeight = item.frame.size.height;
+        CGFloat actionWidth = (maxWidth - self.alertStyle.horizontalSpacing * 2 - self.alertStyle.dividingLineHeight) / self.alertActions.count;
+        CGFloat actionX = self.alertStyle.horizontalSpacing;
+        for (NSInteger i = 0; i < self.alertActions.count; i++) {
             
-        } else if (action.style == DNPopActionStyleCancel) {
-            DNPopItem *defaultItem = (DNPopItem *)item;
-            defaultItem.frame = (CGRect){self.alertStyle.horizontalSpacing,previousItemMaxY,maxWidth - self.alertStyle.horizontalSpacing * 2,item.frame.size.height};
-            defaultItem.titleLabel.font = self.alertStyle.cancelFont;
-            defaultItem.titleLabel.textColor = self.alertStyle.cancelTextColor;
-            defaultItem.titleLabel.frame = defaultItem.bounds;
+            DNPopAction *action = self.alertActions[i];
+            UIView *item = action.item;
+            if (action.style == DNPopActionStyleDefault) {
+                DNPopItem *defaultItem = (DNPopItem *)item;
+                defaultItem.frame = (CGRect){actionX,previousItemMaxY,actionWidth,item.frame.size.height};
+                defaultItem.titleLabel.font = self.alertStyle.defaultFont;
+                defaultItem.titleLabel.textColor = self.alertStyle.defaultTextColor;
+                defaultItem.titleLabel.frame = defaultItem.bounds;
+                
+            } else if (action.style == DNPopActionStyleCancel) {
+                DNPopItem *defaultItem = (DNPopItem *)item;
+                defaultItem.frame = (CGRect){actionX,previousItemMaxY,actionWidth,item.frame.size.height};
+                defaultItem.titleLabel.font = self.alertStyle.cancelFont;
+                defaultItem.titleLabel.textColor = self.alertStyle.cancelTextColor;
+                defaultItem.titleLabel.frame = defaultItem.bounds;
+                
+            } else if (action.style == DNPopActionStyleCustom) {
+                item.frame = (CGRect){0,previousItemMaxY,item.frame.size.width,item.frame.size.height};
+                item.center = CGPointMake(self.center.x, item.center.y);
+                
+            } else {
+                item.frame = (CGRect){0,previousItemMaxY,item.frame.size.width,item.frame.size.height};
+                item.center = CGPointMake(self.center.x, item.center.y);
+            }
+            actionX += item.frame.size.width;
             
-        } else if (action.style == DNPopActionStyleCustom) {
-            item.frame = (CGRect){0,previousItemMaxY,item.frame.size.width,item.frame.size.height};
-            item.center = CGPointMake(self.center.x, item.center.y);
-            
-        } else {
-            item.frame = (CGRect){0,previousItemMaxY,item.frame.size.width,item.frame.size.height};
-            item.center = CGPointMake(self.center.x, item.center.y);
+            if (self.alertStyle.dividingLine && i < self.alertActions.count - 1) {
+                CALayer *line = [CALayer new];
+                line.backgroundColor = self.alertStyle.dividingLineColor.CGColor;
+                CGFloat lineWidth = self.alertStyle.dividingLineHeight;
+                CGFloat lineHeight = actionHeight * 0.3;
+                CGFloat lineX = actionX;
+                CGFloat lineY = previousItemMaxY + (actionHeight - lineHeight) * 0.5;
+                actionX += lineWidth;
+                line.frame = (CGRect){lineX,lineY,lineWidth,lineHeight};
+                [self.layer addSublayer:line];
+            }
         }
         
-        previousItemMaxY += item.frame.size.height;
-        
-        if (self.alertStyle.dividingLine && i < self.alertActions.count - 1) {
-            CALayer *line = [CALayer new];
-            line.backgroundColor = self.alertStyle.dividingLineColor.CGColor;
-            CGFloat lineHeight = self.alertStyle.dividingLineHeight;
-            CGFloat lineX = self.alertStyle.dividingLineRightMargin;
-            line.frame = (CGRect){lineX,previousItemMaxY,self.frame.size.width - self.alertStyle.dividingLineRightMargin - self.alertStyle.dividingLineLeftMargin,lineHeight};
-            [self.layer addSublayer:line];
-            previousItemMaxY += (lineHeight + self.alertStyle.verticalVSpacing);
-        }
-        
+        previousItemMaxY += actionHeight;
     }
+    
     
     CGFloat width = maxWidth;
     CGFloat height = previousItemMaxY;
