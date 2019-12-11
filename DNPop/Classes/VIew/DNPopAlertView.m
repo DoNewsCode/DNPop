@@ -48,7 +48,7 @@
     }
     self.frame = (CGRect){self.frame.origin,maxWidth,previousItemMaxY};
     if (self.title) {
-        CGSize titleSize =  [self.titleLabel.text boundingRectWithSize:CGSizeMake(maxWidth * self.alertStyle.horizontalSpacing, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.titleLabel.font} context:nil].size;
+        CGSize titleSize =  [self.titleLabel.text boundingRectWithSize:CGSizeMake(maxWidth - 2 * self.alertStyle.horizontalSpacing, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.titleLabel.font} context:nil].size;
         self.titleLabel.frame = (CGRect){self.alertStyle.headerEdge.left,previousItemMaxY,maxWidth - self.alertStyle.headerEdge.left - self.alertStyle.headerEdge.right,titleSize.height};
         previousItemMaxY += (titleSize.height + self.alertStyle.headerInsetsMargin);
     }

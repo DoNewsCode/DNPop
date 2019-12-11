@@ -127,7 +127,7 @@
     alertStyle.dividingLine = YES;
     alertStyle.alertheight = 160;
     alertStyle.actionSort = DNPopStyleActionSortByHorizontal;
-    DNPopViewController *customAlertController = [DNPopViewController alertControllerWithTitle:@"这里添加标题" message:nil preferredStyle:DNPopViewControllerStyleAlert];
+    DNPopViewController *customAlertController = [DNPopViewController alertControllerWithTitle:@"开启”人人运动“，记录你的运动记录哟!" message:nil preferredStyle:DNPopViewControllerStyleAlert];
     customAlertController.alertStyle = alertStyle;
     
     customAlertController.presentStyle = DNPopPresentStyleSystem;
