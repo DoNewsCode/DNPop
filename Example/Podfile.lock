@@ -1,5 +1,5 @@
 PODS:
-  - DNPop (1.0.0.12)
+  - DNPop (1.0.0.13)
 
 DEPENDENCIES:
   - DNPop (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DNPop: bbb2fab38cad162c360b6c53d3f085d02f8d0945
+  DNPop: ccbcbab07dfe5542e43e6f666fa1142a1eff9ffb
 
 PODFILE CHECKSUM: 5bf43b738b2fce8bf2a493d91304c1876c2f42f1
 
