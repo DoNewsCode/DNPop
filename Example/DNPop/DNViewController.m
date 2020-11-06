@@ -10,6 +10,8 @@
 #import "DNPop.h"
 #import "DNTestAlertAction.h"
 #import "DNTestViewController.h"
+#import "DNTestPopViewController.h"
+
 @interface DNViewController ()
 
 @end
@@ -94,7 +96,7 @@
     
     DNPopStyle *alertStyle = [DNPopStyle new];
     alertStyle.dividingLine = NO;
-    DNPopViewController *customAlertController = [DNPopViewController alertControllerWithTitle:@"这里添加标题" message:@"这里是createCustomAlert的描述文字，默认剧中展示,可改变弹出、消失动画类型，可添加自定义视图，DNPopStyle中包含可配置项及配置项说明；" preferredStyle:DNPopViewControllerStyleAlert];
+    DNTestPopViewController *customAlertController = [[DNTestPopViewController alloc] initAlertControllerWithTitle:@"这里添加标题" message:@"这里是createCustomAlert的描述文字，默认剧中展示,可改变弹出、消失动画类型，可添加自定义视图，DNPopStyle中包含可配置项及配置项说明；" preferredStyle:DNPopViewControllerStyleAlert];
     customAlertController.alertStyle = alertStyle;
     customAlertController.presentStyle = DNPopPresentStyleSystem;
     customAlertController.dismissStyle = DNPopDismissStyleFadeOut;
@@ -127,7 +129,7 @@
     alertStyle.dividingLine = YES;
     alertStyle.alertheight = 160;
     alertStyle.actionSort = DNPopStyleActionSortByHorizontal;
-    DNPopViewController *customAlertController = [DNPopViewController alertControllerWithTitle:@"开启”人人运动“，记录你的运动记录哟!" message:nil preferredStyle:DNPopViewControllerStyleAlert];
+    DNTestPopViewController *customAlertController = [DNTestPopViewController alertControllerWithTitle:@"开启”人人运动“，记录你的运动记录哟!" message:nil preferredStyle:DNPopViewControllerStyleAlert];
     customAlertController.alertStyle = alertStyle;
     
     customAlertController.presentStyle = DNPopPresentStyleSystem;
@@ -178,15 +180,39 @@
 
 
 - (void)createAlert3 {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self createCustomActionSheet];
     });
 }
 
 
 - (void)createAlert4 {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        DNPopStyle *alertStyle = [DNPopStyle new];
+            DNPopViewController *customAlertController = [DNPopViewController alertControllerWithTitle:@"这里添加标题" message:@"这里是createCustomActionSheet的描述文字，默认剧中展示,可改变弹出、消失动画类型，可添加自定义视图，DNPopStyle中包含可配置项及配置项说明；" preferredStyle:DNPopViewControllerStyleActionSheet];
+            customAlertController.alertStyle = alertStyle;
+            customAlertController.presentStyle = DNPopPresentStyleSlideUpLinear;
+            customAlertController.dismissStyle = DNPopDismissStyleSlideDown;
+        //    customAlertController.backgroundCancel = NO;
+            DNTestAlertAction *alertAction = [DNTestAlertAction actionWithViewHandler:^(UIButton * _Nonnull button) {
+                NSLog(@"%@",button.titleLabel.text);
+                customAlertController.handler(customAlertController);
+            }];
+            alertAction.style = DNPopActionStyleCustom;
+            [customAlertController addAction:alertAction];
+            
+            DNPopAction *alertAction3 = [DNPopAction actionWithTitle:@"取消" style:DNPopActionStyleCancel handler:^{
+                customAlertController.handler(customAlertController);
+            }];
+            [customAlertController addAction:alertAction3];
+            //
+//            [DNPop insertAlertController:customAlertController];
+            DNPopOperation *alertOperation = [DNPopOperation new];
+            alertOperation.priority = DNPopOperationQueuePriorityHigh;
+            alertOperation.fromViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+            alertOperation.toViewController = customAlertController;
+            [DNPop insertAlertOperation:alertOperation];
+//        [DNPop insertAlertOperation:<#(nonnull DNPopOperation *)#>]
     });
 }
 
@@ -217,10 +243,12 @@
 
 - (void)eventButton3Click:(UIButton *)button {
     NSLog(@"eventButton3Click");
+    [self createAlert3];
 }
 
 - (void)eventButton4Click:(UIButton *)button {
     NSLog(@"eventButton3Click");
-    [self createCustomHorizontalAlert];
+//    [self createCustomHorizontalAlert];
+    [self createAlert4];
 }
 @end

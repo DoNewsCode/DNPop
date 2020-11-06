@@ -49,6 +49,35 @@
     return customAlertController;
 }
 
+- (instancetype)initAlertControllerWithTitle:(NSString *)title message:(NSString *)message preferredStyle:(DNPopViewControllerStyle)preferredStyle
+{
+    self = [self init];
+    if (self) {
+        self.preferredStyle = preferredStyle;
+        self.customTitle = title;
+        self.customMessage = message;
+        if (preferredStyle == DNPopViewControllerStyleActionSheet) {
+            
+            self.presentStyle = DNPopPresentStyleSlideUp;
+            self.dismissStyle = DNPopDismissStyleSlideDown;
+        } else if (preferredStyle == DNPopViewControllerStyleAlert) {
+            
+            self.presentStyle = DNPopPresentStyleSystem;
+            self.dismissStyle = DNPopDismissStyleFadeOut;
+        }
+    }
+    return self;
+}
+
+- (instancetype)initAlertControllerWithPreferredStyle:(DNPopViewControllerStyle )preferredStyle
+{
+    self = [self init];
+    if (self) {
+            self.preferredStyle = preferredStyle;
+    }
+    return self;
+}
+
 #pragma mark - Override Methods
 - (instancetype)init {
     if (self = [super init]) {

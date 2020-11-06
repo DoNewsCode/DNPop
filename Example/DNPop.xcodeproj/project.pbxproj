@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A2F5C972554E1FB00A8ED52 /* DNTestPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F5C962554E1FB00A8ED52 /* DNTestPopViewController.m */; };
 		4A9F252A5D02FBF9993FFE04 /* Pods_DNPop_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E85BF77B2F0C81342FA1A5 /* Pods_DNPop_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		1B462B2303255D2B399CAEDB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		23E81887E871887218D3066D /* Pods-DNPop_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNPop_Example.debug.xcconfig"; path = "Target Support Files/Pods-DNPop_Example/Pods-DNPop_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3A2F5C952554E1FB00A8ED52 /* DNTestPopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNTestPopViewController.h; sourceTree = "<group>"; };
+		3A2F5C962554E1FB00A8ED52 /* DNTestPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNTestPopViewController.m; sourceTree = "<group>"; };
 		5C83FF03C890B72FDCA2F17A /* Pods-DNPop_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNPop_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DNPop_Tests/Pods-DNPop_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DNPop_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNPop_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -148,6 +151,8 @@
 				6003F5A6195388D20070C39A /* DNViewController.m */,
 				66F5014C233C628700F7D3FC /* DNTestViewController.h */,
 				66F5014D233C628700F7D3FC /* DNTestViewController.m */,
+				3A2F5C952554E1FB00A8ED52 /* DNTestPopViewController.h */,
+				3A2F5C962554E1FB00A8ED52 /* DNTestPopViewController.m */,
 				66DFD54422CB378700944533 /* DNTestAlertAction.h */,
 				66DFD54522CB378700944533 /* DNTestAlertAction.m */,
 				66DFD54722CB379A00944533 /* DNTestView.h */,
@@ -387,6 +392,7 @@
 				66DFD54922CB379A00944533 /* DNTestView.m in Sources */,
 				66DFD54622CB378700944533 /* DNTestAlertAction.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				3A2F5C972554E1FB00A8ED52 /* DNTestPopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
