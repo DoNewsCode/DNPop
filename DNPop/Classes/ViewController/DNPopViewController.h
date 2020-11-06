@@ -64,15 +64,16 @@ typedef NS_ENUM(NSInteger, DNPopViewControllerStyle) {
 + (instancetype)alertControllerWithTitle:(nullable NSString *)title message:(nullable NSString *)message preferredStyle:(DNPopViewControllerStyle )preferredStyle;
 
 
+- (instancetype)initAlertControllerWithTitle:(NSString *)title message:(NSString *)message preferredStyle:(DNPopViewControllerStyle)preferredStyle;
+
+- (instancetype)initAlertControllerWithPreferredStyle:(DNPopViewControllerStyle )preferredStyle;
+
 - (void)addAction:(DNPopAction *)action;
 
 - (void)addActions:(NSArray<DNPopAction *> *)actions;
 
 - (void)returnHandler:(void (^ __nullable)(DNPopViewController *alertController))handler;
 
-- (instancetype)initAlertControllerWithTitle:(NSString *)title message:(NSString *)message preferredStyle:(DNPopViewControllerStyle)preferredStyle;
-
-- (instancetype)initAlertControllerWithPreferredStyle:(DNPopViewControllerStyle )preferredStyle;
 
 @end
 
