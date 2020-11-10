@@ -44,8 +44,6 @@
         
         self.cancelTextColor = [UIColor redColor];
         self.cancelFont = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
-        
-        self.actionSource = DNPopStyleActionSource_Renren;
     }
     return self;
 }

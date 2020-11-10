@@ -115,7 +115,7 @@
         UILabel *titleLabel = [UILabel new];
         titleLabel.font = [UIFont systemFontOfSize:16.];
         titleLabel.textColor = [UIColor blackColor];
-        titleLabel.backgroundColor = [UIColor clearColor];
+        titleLabel.backgroundColor = [UIColor whiteColor];
         titleLabel.textAlignment = NSTextAlignmentCenter;
         titleLabel.userInteractionEnabled = YES;
         titleLabel.numberOfLines = 0;
@@ -130,7 +130,7 @@
         UILabel *messageLabel = [UILabel new];
         messageLabel.font = [UIFont systemFontOfSize:14.];
         messageLabel.textColor = [UIColor blackColor];
-        messageLabel.backgroundColor = [UIColor clearColor];
+        messageLabel.backgroundColor = [UIColor whiteColor];
         messageLabel.textAlignment = NSTextAlignmentCenter;
         messageLabel.userInteractionEnabled = YES;
         messageLabel.numberOfLines = 0;

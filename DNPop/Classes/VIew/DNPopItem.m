@@ -69,11 +69,10 @@
         UILabel *titleLabel = [UILabel new];
         titleLabel.font = [UIFont systemFontOfSize:16.];
         titleLabel.textColor = [UIColor blackColor];
-        titleLabel.backgroundColor = [UIColor clearColor];
+        titleLabel.backgroundColor = [UIColor whiteColor];
         titleLabel.textAlignment = NSTextAlignmentCenter;
         titleLabel.userInteractionEnabled = YES;
         titleLabel.numberOfLines = 0;
-        
         _titleLabel = titleLabel;
     }
     return _titleLabel;

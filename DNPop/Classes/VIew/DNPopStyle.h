@@ -14,18 +14,9 @@ typedef NS_ENUM(NSUInteger, DNPopStyleActionSort) {
     DNPopStyleActionSortByHorizontal,      // 水平
 };
 
-/// Action 来源
-typedef NS_ENUM(NSUInteger, DNPopStyleActionSource) {
-    DNPopStyleActionSource_Renren,            // 人人
-    DNPopStyleActionSource_RenrenPlay,        // 人人爱玩
-};
-
 @interface DNPopStyle : NSObject
 /// Action 排列方式 默认垂直（DNPopStyleActionSortByVertical）
 @property(nonatomic, assign) DNPopStyleActionSort actionSort;
-
-/// Action 来源
-@property(nonatomic, assign) DNPopStyleActionSource actionSource;
 
 /** 两侧圆角，默认：CGSizeMake(20, 20) */
 @property(nonatomic, assign) CGSize cornerRadii;
