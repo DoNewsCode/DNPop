@@ -229,12 +229,8 @@
 - (void)createAlert5 {
     DNPopStyle *alertStyle = [DNPopStyle new];
     alertStyle.dividingLine = YES;
-//    alertStyle.alertheight = 160;
-    alertStyle.dividingLineHeight = 0.333333;
-    alertStyle.dividingLineColor = [UIColor grayColor];
     alertStyle.defaultTextColor = [UIColor blueColor];
     alertStyle.cancelTextColor = [UIColor blueColor];
-//    alertStyle.alertheight = 160;
     alertStyle.actionSort = DNPopStyleActionSortByHorizontal;
     DNTestPopViewController *customAlertController = [DNTestPopViewController alertControllerWithTitle:@"开启”人人运动“" message:nil preferredStyle:DNPopViewControllerStyleAlert];
     customAlertController.alertStyle = alertStyle;
