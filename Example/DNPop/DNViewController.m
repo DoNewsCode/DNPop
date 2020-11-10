@@ -66,13 +66,22 @@
     [button3 addTarget:self action:@selector(eventButton3Click:) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *button4 = [UIButton buttonWithType:UIButtonTypeCustom];
-       button4.titleLabel.numberOfLines = 0;
-       button4.backgroundColor = [UIColor blueColor];
-       [button4 setTitle:@"D" forState:UIControlStateNormal];
-       button4.titleLabel.font = [UIFont systemFontOfSize:18.];
-       button4.frame = (CGRect){130,215,100,100};
-       [self.view addSubview:button4];
-       [button4 addTarget:self action:@selector(eventButton4Click:) forControlEvents:UIControlEventTouchUpInside];
+    button4.titleLabel.numberOfLines = 0;
+    button4.backgroundColor = [UIColor blueColor];
+    [button4 setTitle:@"E" forState:UIControlStateNormal];
+    button4.titleLabel.font = [UIFont systemFontOfSize:18.];
+    button4.frame = (CGRect){130,215,100,100};
+    [self.view addSubview:button4];
+    [button4 addTarget:self action:@selector(eventButton4Click:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *button5 = [UIButton buttonWithType:UIButtonTypeCustom];
+    button5.titleLabel.numberOfLines = 0;
+    button5.backgroundColor = [UIColor blueColor];
+    [button5 setTitle:@"F" forState:UIControlStateNormal];
+    button5.titleLabel.font = [UIFont systemFontOfSize:18.];
+    button5.frame = (CGRect){260,215,100,100};
+    [self.view addSubview:button5];
+    [button5 addTarget:self action:@selector(eventButton5Click:) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
@@ -96,6 +105,7 @@
     
     DNPopStyle *alertStyle = [DNPopStyle new];
     alertStyle.dividingLine = NO;
+    alertStyle.actionSource = DNPopStyleActionSource_RenrenPlay;
     DNTestPopViewController *customAlertController = [[DNTestPopViewController alloc] initAlertControllerWithTitle:@"这里添加标题" message:@"这里是createCustomAlert的描述文字，默认剧中展示,可改变弹出、消失动画类型，可添加自定义视图，DNPopStyle中包含可配置项及配置项说明；" preferredStyle:DNPopViewControllerStyleAlert];
     customAlertController.alertStyle = alertStyle;
     customAlertController.presentStyle = DNPopPresentStyleSystem;
@@ -135,12 +145,12 @@
     customAlertController.presentStyle = DNPopPresentStyleSystem;
     customAlertController.dismissStyle = DNPopDismissStyleFadeOut;
     customAlertController.backgroundCancel = NO;
-//    DNTestAlertAction *alertAction = [DNTestAlertAction actionWithViewHandler:^(UIButton * _Nonnull button) {
-//        NSLog(@"点击了：%@",button.titleLabel.text);
-//        customAlertController.handler(customAlertController);
-//    }];
-//    alertAction.style = DNPopActionStyleCustom;
-//    [customAlertController addAction:alertAction];
+    //    DNTestAlertAction *alertAction = [DNTestAlertAction actionWithViewHandler:^(UIButton * _Nonnull button) {
+    //        NSLog(@"点击了：%@",button.titleLabel.text);
+    //        customAlertController.handler(customAlertController);
+    //    }];
+    //    alertAction.style = DNPopActionStyleCustom;
+    //    [customAlertController addAction:alertAction];
     
     DNPopAction *alertAction2 = [DNPopAction actionWithTitle:@"好的" style:DNPopActionStyleDefault handler:^{
         customAlertController.handler(customAlertController);
@@ -162,7 +172,7 @@
     customAlertController.alertStyle = alertStyle;
     customAlertController.presentStyle = DNPopPresentStyleSlideUpLinear;
     customAlertController.dismissStyle = DNPopDismissStyleSlideDown;
-//    customAlertController.backgroundCancel = NO;
+    //    customAlertController.backgroundCancel = NO;
     DNTestAlertAction *alertAction = [DNTestAlertAction actionWithViewHandler:^(UIButton * _Nonnull button) {
         NSLog(@"%@",button.titleLabel.text);
         customAlertController.handler(customAlertController);
@@ -189,38 +199,65 @@
 - (void)createAlert4 {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         DNPopStyle *alertStyle = [DNPopStyle new];
-            DNPopViewController *customAlertController = [DNPopViewController alertControllerWithTitle:@"这里添加标题" message:@"这里是createCustomActionSheet的描述文字，默认剧中展示,可改变弹出、消失动画类型，可添加自定义视图，DNPopStyle中包含可配置项及配置项说明；" preferredStyle:DNPopViewControllerStyleActionSheet];
-            customAlertController.alertStyle = alertStyle;
-            customAlertController.presentStyle = DNPopPresentStyleSlideUpLinear;
-            customAlertController.dismissStyle = DNPopDismissStyleSlideDown;
+        DNPopViewController *customAlertController = [DNPopViewController alertControllerWithTitle:@"这里添加标题" message:@"这里是createCustomActionSheet的描述文字，默认剧中展示,可改变弹出、消失动画类型，可添加自定义视图，DNPopStyle中包含可配置项及配置项说明；" preferredStyle:DNPopViewControllerStyleActionSheet];
+        customAlertController.alertStyle = alertStyle;
+        customAlertController.presentStyle = DNPopPresentStyleSlideUpLinear;
+        customAlertController.dismissStyle = DNPopDismissStyleSlideDown;
         //    customAlertController.backgroundCancel = NO;
-            DNTestAlertAction *alertAction = [DNTestAlertAction actionWithViewHandler:^(UIButton * _Nonnull button) {
-                NSLog(@"%@",button.titleLabel.text);
-                customAlertController.handler(customAlertController);
-            }];
-            alertAction.style = DNPopActionStyleCustom;
-            [customAlertController addAction:alertAction];
-            
-            DNPopAction *alertAction3 = [DNPopAction actionWithTitle:@"取消" style:DNPopActionStyleCancel handler:^{
-                customAlertController.handler(customAlertController);
-            }];
-            [customAlertController addAction:alertAction3];
-            //
-//            [DNPop insertAlertController:customAlertController];
-            DNPopOperation *alertOperation = [DNPopOperation new];
-            alertOperation.priority = DNPopOperationQueuePriorityHigh;
-            alertOperation.fromViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
-            alertOperation.toViewController = customAlertController;
-            [DNPop insertAlertOperation:alertOperation];
-//        [DNPop insertAlertOperation:<#(nonnull DNPopOperation *)#>]
+        DNTestAlertAction *alertAction = [DNTestAlertAction actionWithViewHandler:^(UIButton * _Nonnull button) {
+            NSLog(@"%@",button.titleLabel.text);
+            customAlertController.handler(customAlertController);
+        }];
+        alertAction.style = DNPopActionStyleCustom;
+        [customAlertController addAction:alertAction];
+        
+        DNPopAction *alertAction3 = [DNPopAction actionWithTitle:@"取消" style:DNPopActionStyleCancel handler:^{
+            customAlertController.handler(customAlertController);
+        }];
+        [customAlertController addAction:alertAction3];
+        //
+        //            [DNPop insertAlertController:customAlertController];
+        DNPopOperation *alertOperation = [DNPopOperation new];
+        alertOperation.priority = DNPopOperationQueuePriorityHigh;
+        alertOperation.fromViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+        alertOperation.toViewController = customAlertController;
+        [DNPop insertAlertOperation:alertOperation];
+        //        [DNPop insertAlertOperation:<#(nonnull DNPopOperation *)#>]
     });
 }
 
 - (void)createAlert5 {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
-        
-    });
+    DNPopStyle *alertStyle = [DNPopStyle new];
+    alertStyle.dividingLine = YES;
+    alertStyle.alertheight = 160;
+    alertStyle.defaultTextColor = [UIColor blueColor];
+    alertStyle.cancelTextColor = [UIColor blueColor];
+    alertStyle.alertheight = 160;
+    alertStyle.actionSort = DNPopStyleActionSortByHorizontal;
+    DNTestPopViewController *customAlertController = [DNTestPopViewController alertControllerWithTitle:@"开启”人人运动“" message:nil preferredStyle:DNPopViewControllerStyleAlert];
+    customAlertController.alertStyle = alertStyle;
+    
+    customAlertController.presentStyle = DNPopPresentStyleSystem;
+    customAlertController.dismissStyle = DNPopDismissStyleFadeOut;
+    customAlertController.backgroundCancel = NO;
+    //    DNTestAlertAction *alertAction = [DNTestAlertAction actionWithViewHandler:^(UIButton * _Nonnull button) {
+    //        NSLog(@"点击了：%@",button.titleLabel.text);
+    //        customAlertController.handler(customAlertController);
+    //    }];
+    //    alertAction.style = DNPopActionStyleCustom;
+    //    [customAlertController addAction:alertAction];
+    
+    DNPopAction *alertAction2 = [DNPopAction actionWithTitle:@"好的" style:DNPopActionStyleDefault handler:^{
+        customAlertController.handler(customAlertController);
+    }];
+    [customAlertController addAction:alertAction2];
+    
+    DNPopAction *alertAction3 = [DNPopAction actionWithTitle:@"取消" style:DNPopActionStyleCancel handler:^{
+        customAlertController.handler(customAlertController);
+    }];
+    [customAlertController addAction:alertAction3];
+    //
+    [DNPop insertAlertController:customAlertController];
 }
 
 
@@ -238,7 +275,7 @@
 - (void)eventButton2Click:(UIButton *)button {
     DNTestViewController *testViewController = [DNTestViewController new];
     [self presentViewController:testViewController animated:YES completion:nil];
-//    [self createCustomActionSheet];
+    //    [self createCustomActionSheet];
 }
 
 - (void)eventButton3Click:(UIButton *)button {
@@ -248,7 +285,14 @@
 
 - (void)eventButton4Click:(UIButton *)button {
     NSLog(@"eventButton3Click");
-//    [self createCustomHorizontalAlert];
+    //    [self createCustomHorizontalAlert];
     [self createAlert4];
 }
+
+- (void)eventButton5Click:(UIButton *)button {
+    NSLog(@"eventButton3Click");
+    //    [self createCustomHorizontalAlert];
+    [self createAlert5];
+}
+
 @end
