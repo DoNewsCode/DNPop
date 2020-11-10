@@ -24,14 +24,12 @@
         self.dividingLineColor = [UIColor grayColor];
         
         self.dividingLine = YES;
-        self.dividingLineRightMargin = 15.;
-        self.dividingLineLeftMargin = 15.;
-        self.dividingLineHeight = 1;
+        self.dividingLineInset = UIEdgeInsetsMake(0., 15., 0., 15.);
+        self.dividingLineHeight = 0.333333;
         
         self.headerLine = YES;
-        self.headerLineRightMargin = 15.;
-        self.headerLineLeftMargin = 15.;
-        self.headerLineHeight = 1;
+        self.headerLineInset = UIEdgeInsetsMake(0., 0., 0., 0.);
+        self.headerLineHeight = 0.333333;
         
         self.titleTextColor = [UIColor blackColor];
         self.messageTextColor = [UIColor grayColor];

@@ -57,13 +57,15 @@
         CGSize messageSize =  [self.messageLabel.text boundingRectWithSize:CGSizeMake(maxWidth - 2 * self.alertStyle.horizontalSpacing, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.messageLabel.font} context:nil].size;
         self.messageLabel.frame = (CGRect){self.alertStyle.headerEdge.left,previousItemMaxY,maxWidth - self.alertStyle.headerEdge.left - self.alertStyle.headerEdge.right,messageSize.height};
         previousItemMaxY += (messageSize.height + self.alertStyle.headerEdge.bottom);
+    } else {
+        previousItemMaxY += self.alertStyle.headerEdge.bottom;
     }
     
     if ((self.message || self.title) && self.alertActions.count > 0 && self.alertStyle.headerLine) {
         CALayer *line = [CALayer new];
         line.backgroundColor = self.alertStyle.dividingLineColor.CGColor;
         CGFloat lineHeight = self.alertStyle.headerLineHeight;
-        CGFloat lineX = self.alertStyle.headerLineRightMargin;
+        CGFloat lineX = self.alertStyle.headerLineInset.left;
         if (self.alertStyle.actionSort == DNPopStyleActionSortByHorizontal) {
             DNPopAction *action = self.alertActions.firstObject;
             UIView *item = action.item;
@@ -72,7 +74,7 @@
                 previousItemMaxY = self.alertStyle.alertheight - actionHeight - lineHeight;
             }
         }
-        line.frame = (CGRect){lineX,previousItemMaxY,maxWidth - self.alertStyle.headerLineRightMargin - self.alertStyle.headerLineLeftMargin,lineHeight};
+        line.frame = (CGRect){lineX,previousItemMaxY,maxWidth - self.alertStyle.headerLineInset.right - self.alertStyle.headerLineInset.left,lineHeight};
         [self.layer addSublayer:line];
         previousItemMaxY += (lineHeight);
     }
@@ -111,8 +113,8 @@
                 CALayer *line = [CALayer new];
                 line.backgroundColor = self.alertStyle.dividingLineColor.CGColor;
                 CGFloat lineHeight = self.alertStyle.dividingLineHeight;
-                CGFloat lineX = self.alertStyle.dividingLineRightMargin;
-                line.frame = (CGRect){lineX,previousItemMaxY,self.frame.size.width - self.alertStyle.dividingLineRightMargin - self.alertStyle.dividingLineLeftMargin,lineHeight};
+                CGFloat lineX = self.alertStyle.dividingLineInset.left;
+                line.frame = (CGRect){lineX,previousItemMaxY,self.frame.size.width - self.alertStyle.dividingLineInset.right - self.alertStyle.dividingLineInset.left,lineHeight};
                 [self.layer addSublayer:line];
                 previousItemMaxY += (lineHeight + self.alertStyle.verticalVSpacing);
             }
@@ -122,7 +124,7 @@
         DNPopAction *action = self.alertActions.firstObject;
         UIView *item = action.item;
         CGFloat actionHeight = item.frame.size.height;
-        CGFloat actionWidth = (maxWidth - self.alertStyle.horizontalSpacing * 2 - self.alertStyle.dividingLineHeight) / self.alertActions.count;
+        CGFloat actionWidth = (maxWidth - self.alertStyle.horizontalSpacing * 2 - (self.alertStyle.dividingLineHeight + 1) * (self.alertActions.count - 1)) / self.alertActions.count;
         CGFloat actionX = self.alertStyle.horizontalSpacing;
         for (NSInteger i = 0; i < self.alertActions.count; i++) {
             
@@ -150,16 +152,16 @@
                 item.frame = (CGRect){0,previousItemMaxY,item.frame.size.width,item.frame.size.height};
                 item.center = CGPointMake(self.center.x, item.center.y);
             }
-            actionX += item.frame.size.width;
+            actionX += item.frame.size.width + 0.5;
             
             if (self.alertStyle.dividingLine && i < self.alertActions.count - 1) {
                 CALayer *line = [CALayer new];
                 line.backgroundColor = self.alertStyle.dividingLineColor.CGColor;
                 CGFloat lineWidth = self.alertStyle.dividingLineHeight;
-                CGFloat lineHeight = actionHeight * 0.3;
+                CGFloat lineHeight = actionHeight;
                 CGFloat lineX = actionX;
                 CGFloat lineY = previousItemMaxY + (actionHeight - lineHeight) * 0.5;
-                actionX += lineWidth;
+                actionX += lineWidth + 0.5;
                 line.frame = (CGRect){lineX,lineY,lineWidth,lineHeight};
                 [self.layer addSublayer:line];
             }

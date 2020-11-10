@@ -105,7 +105,7 @@
     
     DNPopStyle *alertStyle = [DNPopStyle new];
     alertStyle.dividingLine = NO;
-    alertStyle.actionSource = DNPopStyleActionSource_RenrenPlay;
+//    alertStyle.actionSource = DNPopStyleActionSource_RenrenPlay;
     DNTestPopViewController *customAlertController = [[DNTestPopViewController alloc] initAlertControllerWithTitle:@"这里添加标题" message:@"这里是createCustomAlert的描述文字，默认剧中展示,可改变弹出、消失动画类型，可添加自定义视图，DNPopStyle中包含可配置项及配置项说明；" preferredStyle:DNPopViewControllerStyleAlert];
     customAlertController.alertStyle = alertStyle;
     customAlertController.presentStyle = DNPopPresentStyleSystem;
@@ -229,10 +229,12 @@
 - (void)createAlert5 {
     DNPopStyle *alertStyle = [DNPopStyle new];
     alertStyle.dividingLine = YES;
-    alertStyle.alertheight = 160;
+//    alertStyle.alertheight = 160;
+    alertStyle.dividingLineHeight = 0.333333;
+    alertStyle.dividingLineColor = [UIColor grayColor];
     alertStyle.defaultTextColor = [UIColor blueColor];
     alertStyle.cancelTextColor = [UIColor blueColor];
-    alertStyle.alertheight = 160;
+//    alertStyle.alertheight = 160;
     alertStyle.actionSort = DNPopStyleActionSortByHorizontal;
     DNTestPopViewController *customAlertController = [DNTestPopViewController alertControllerWithTitle:@"开启”人人运动“" message:nil preferredStyle:DNPopViewControllerStyleAlert];
     customAlertController.alertStyle = alertStyle;

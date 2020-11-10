@@ -60,8 +60,8 @@
         CALayer *line = [CALayer new];
         line.backgroundColor = self.alertStyle.dividingLineColor.CGColor;
         CGFloat lineHeight = self.alertStyle.headerLineHeight;
-        CGFloat lineX = self.alertStyle.headerLineRightMargin;
-        line.frame = (CGRect){lineX,previousItemMaxY,self.frame.size.width - self.alertStyle.headerLineRightMargin - self.alertStyle.headerLineLeftMargin,lineHeight};
+        CGFloat lineX = self.alertStyle.headerLineInset.left;
+        line.frame = (CGRect){lineX,previousItemMaxY,self.frame.size.width - self.alertStyle.headerLineInset.right - self.alertStyle.headerLineInset.left,lineHeight};
         [self.layer addSublayer:line];
         previousItemMaxY += (lineHeight);
     }
@@ -97,8 +97,8 @@
             CALayer *line = [CALayer new];
             line.backgroundColor = self.alertStyle.dividingLineColor.CGColor;
             CGFloat lineHeight = self.alertStyle.dividingLineHeight;
-            CGFloat lineX = self.alertStyle.dividingLineRightMargin;
-            line.frame = (CGRect){lineX,previousItemMaxY,self.frame.size.width - self.alertStyle.dividingLineRightMargin - self.alertStyle.dividingLineLeftMargin,lineHeight};
+            CGFloat lineX = self.alertStyle.dividingLineInset.left;
+            line.frame = (CGRect){lineX,previousItemMaxY,self.frame.size.width - self.alertStyle.dividingLineInset.right - self.alertStyle.dividingLineInset.left,lineHeight};
             [self.layer addSublayer:line];
             previousItemMaxY += (lineHeight + self.alertStyle.verticalVSpacing);
         }

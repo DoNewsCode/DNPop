@@ -44,11 +44,8 @@ typedef NS_ENUM(NSUInteger, DNPopStyleActionSort) {
 /** 分割线是否展示 默认：YES */
 @property(nonatomic, assign) BOOL dividingLine;
 
-/** 分割线左侧间距 默认：15 */
-@property(nonatomic, assign) CGFloat dividingLineRightMargin;
-
-/** 分割线右侧间距 默认：15 */
-@property(nonatomic, assign) CGFloat dividingLineLeftMargin;
+/** 分割线右内距 默认：{0,0,0,0} */
+@property(nonatomic, assign) UIEdgeInsets dividingLineInset;
 
 /** 分割线高度 默认：1 */
 @property(nonatomic, assign) CGFloat dividingLineHeight;
@@ -57,11 +54,8 @@ typedef NS_ENUM(NSUInteger, DNPopStyleActionSort) {
 /** 头部分割线是否展示 默认：YES */
 @property(nonatomic, assign) BOOL headerLine;
 
-/** 头部分割线左侧间距 默认：15 */
-@property(nonatomic, assign) CGFloat headerLineRightMargin;
-
-/** 头部分割线右侧间距 默认：15 */
-@property(nonatomic, assign) CGFloat headerLineLeftMargin;
+/** 头部分割线内边距 默认：{0,0,0,0} */
+@property(nonatomic, assign) UIEdgeInsets headerLineInset;
 
 /** 头部分割线高度 默认：1 */
 @property(nonatomic, assign) CGFloat headerLineHeight;
