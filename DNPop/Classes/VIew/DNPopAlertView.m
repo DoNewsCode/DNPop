@@ -56,6 +56,7 @@
     
     if (self.message) {
         CGSize messageSize =  [self.messageLabel.text boundingRectWithSize:CGSizeMake(maxWidth - 2 * self.alertStyle.horizontalSpacing, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.messageLabel.font} context:nil].size;
+        messageSize.height += 1;
         self.messageLabel.frame = (CGRect){self.alertStyle.headerEdge.left,previousItemMaxY,maxWidth - self.alertStyle.headerEdge.left - self.alertStyle.headerEdge.right,roundf(messageSize.height)};
         previousItemMaxY += (roundf(messageSize.height) + self.alertStyle.headerEdge.bottom);
     } else {
