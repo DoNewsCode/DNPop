@@ -46,13 +46,13 @@
         previousItemMaxY += self.alertStyle.headerEdge.top;
     }
     if (self.title) {
-        CGSize titleSize =  [self.titleLabel.text boundingRectWithSize:CGSizeMake(self.frame.size.width - 2 * self.alertStyle.horizontalSpacing, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.titleLabel.font} context:nil].size;
+        CGSize titleSize =  [self.titleLabel.text boundingRectWithSize:CGSizeMake(self.frame.size.width - self.alertStyle.headerEdge.left - self.alertStyle.headerEdge.right, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.titleLabel.font} context:nil].size;
         self.titleLabel.frame = (CGRect){self.alertStyle.headerEdge.left,previousItemMaxY,self.frame.size.width - self.alertStyle.headerEdge.left - self.alertStyle.headerEdge.right,ceilf(titleSize.height)};
         previousItemMaxY += (self.titleLabel.frame.size.height + self.alertStyle.headerInsetsMargin);
     }
     
     if (self.message) {
-        CGSize messageSize =  [self.messageLabel.text boundingRectWithSize:CGSizeMake(self.frame.size.width - 2 * self.alertStyle.horizontalSpacing, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.messageLabel.font} context:nil].size;
+        CGSize messageSize =  [self.messageLabel.text boundingRectWithSize:CGSizeMake(self.frame.size.width - self.alertStyle.headerEdge.left - self.alertStyle.headerEdge.right, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.messageLabel.font} context:nil].size;
         self.messageLabel.frame = (CGRect){self.alertStyle.headerEdge.left,previousItemMaxY,self.frame.size.width - self.alertStyle.headerEdge.left - self.alertStyle.headerEdge.right,ceilf(messageSize.height)};
         previousItemMaxY += (self.messageLabel.frame.size.height + self.alertStyle.headerEdge.bottom);
     }
