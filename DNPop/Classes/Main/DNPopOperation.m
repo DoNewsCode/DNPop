@@ -71,11 +71,11 @@
     self.executing = YES;
     __weak typeof(self) weakSelf = self;
     [self.toViewController dismissViewControllerAnimated:YES completion:^{
-        weakSelf.executing = NO;
-        weakSelf.finished = YES;
         if (weakSelf.toViewController.dismissCompletionBlock) {
             weakSelf.toViewController.dismissCompletionBlock(weakSelf.toViewController);
         }
+        weakSelf.executing = NO;
+        weakSelf.finished = YES;
         weakSelf.toViewController = nil;
     }];
     
