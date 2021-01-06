@@ -149,7 +149,7 @@
     self.handler = handler;
 }
 
-- (void)eventForDismissCompletionBlock:(DNPopViewControllerDismissEventBlock)dismissCompletionBlock {
+- (void)eventForDismissCompletionBlock:(DNPopViewControllerDismissCompletionBlock)dismissCompletionBlock {
     self.dismissCompletionBlock = dismissCompletionBlock;
 }
 
