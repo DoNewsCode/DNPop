@@ -60,14 +60,23 @@ static DNPop *_instance = nil;
     }
 }
 
++ (void)reset {
+    DNPop *manager = [DNPop sharedInstance];
+    [manager.alertOperationQueue reset];
+    
+}
+
 #pragma mark - Private Methods
 - (void)insertFromViewController:(UIViewController *)fromViewController alertController:(nonnull DNPopViewController *)alertViewController {
     
     DNPopOperation *alertOperation = [DNPopOperation new];
+    printf("Retain Count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(alertOperation)));
+    
     alertOperation.priority = DNPopOperationQueuePriorityNormal;
     alertOperation.fromViewController = fromViewController;
     alertOperation.toViewController = alertViewController;
     
+    printf("Retain Count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(alertOperation)));
     [self.alertOperationQueue addOperation:alertOperation];
 }
 

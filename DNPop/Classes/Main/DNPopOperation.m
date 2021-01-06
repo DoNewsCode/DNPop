@@ -69,9 +69,14 @@
 
 - (void)cancel {
     self.executing = YES;
+    __weak typeof(self) weakSelf = self;
     [self.toViewController dismissViewControllerAnimated:YES completion:^{
-        self.executing = NO;
-        self.finished = YES;
+        weakSelf.executing = NO;
+        weakSelf.finished = YES;
+        if (weakSelf.toViewController.dismissCompletionBlock) {
+            weakSelf.toViewController.dismissCompletionBlock(weakSelf.toViewController);
+        }
+        weakSelf.toViewController = nil;
     }];
     
 }

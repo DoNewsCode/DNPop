@@ -22,6 +22,7 @@ typedef NS_ENUM(NSInteger, DNPopViewControllerStyle) {
     DNPopViewControllerStyleAlert
 } NS_ENUM_AVAILABLE_IOS(8_0);
 
+typedef void(^DNPopViewControllerDismissCompletionBlock)(id eventObject);
 
 @interface DNPopViewController : UIViewController
 
@@ -58,6 +59,12 @@ typedef NS_ENUM(NSInteger, DNPopViewControllerStyle) {
 
 /** 取消弹窗的回调 */
 @property (nonatomic, copy) void (^handler)(DNPopViewController * _Nonnull alertController);
+
+/// 选中事件的Block
+@property (nonatomic, copy) DNPopViewControllerDismissCompletionBlock dismissCompletionBlock;
+/// <#EventName#>
+- (void)eventForDismissCompletionBlock:(DNPopViewControllerDismissCompletionBlock)dismissCompletionBlock;
+
 
 + (instancetype)alertControllerWithPreferredStyle:(DNPopViewControllerStyle )preferredStyle;
 

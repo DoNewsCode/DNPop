@@ -10,7 +10,7 @@
 @interface DNPopOperationQueue ()
 
 @property (atomic, strong) NSMutableArray<__kindof DNPopOperation *> *alertOperations;
-@property(atomic, strong) DNPopOperation *currentAlertOperation;
+@property(atomic, weak) DNPopOperation *currentAlertOperation;
 @end
 
 @implementation DNPopOperationQueue
@@ -41,7 +41,10 @@
             if (self.currentAlertOperation == object) {
                 self.currentAlertOperation = nil;
             }
+            printf("Retain Count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(object)));
             [self.alertOperations removeObject:(DNPopOperation *)object];
+            
+            printf("Retain Count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(object)));
             [object removeObserver:self forKeyPath:@"finished" context:nil];
             [self start];
         }
@@ -60,8 +63,11 @@
     if (op == nil) {
         return;
     }
+    
+    printf("Retain Count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(op)));
     [self.alertOperations addObject:op];
-    if (self.alertOperations.count > 1 && self.currentAlertOperation) {//当前无正在展示的Alert
+    printf("Retain Count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(op)));
+    if (self.alertOperations.count > 1 && self.currentAlertOperation) {//当前正在展示的Alert
         [self bubbleSort:self.alertOperations];
         if (op.priority > self.currentAlertOperation.priority) {
             [self.currentAlertOperation removeObserver:self forKeyPath:@"finished" context:nil];
@@ -81,6 +87,13 @@
 
 - (void)addOperationWithBlock:(void (^)(void))block {
     
+}
+
+- (void)reset {
+    if (self.currentAlertOperation) {
+        [self.currentAlertOperation cancel];
+    }
+    [self.alertOperations removeAllObjects];
 }
 
 #pragma mark - Private Methods

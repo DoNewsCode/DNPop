@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)addOperationWithBlock:(void (^)(void))block;
 
+- (void)reset;
 @end
 
 NS_ASSUME_NONNULL_END

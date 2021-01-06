@@ -50,6 +50,10 @@
     
 }
 
+- (void)dealloc {
+    NSLog(@"DNTestPopViewController ---- dealloc");
+}
+
 /*
 #pragma mark - Navigation
 

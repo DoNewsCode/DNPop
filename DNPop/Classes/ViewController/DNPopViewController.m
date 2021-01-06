@@ -130,6 +130,10 @@
     [super viewWillDisappear:animated];
 }
 
+-(void)dealloc {
+    NSLog(@"DNPopViewController ----- dealloc");
+}
+
 #pragma mark - Public Methods
 - (void)addAction:(DNPopAction *)action {
     [self.alertActions addObject:action];
@@ -143,6 +147,10 @@
 
 - (void)returnHandler:(void (^ __nullable)(DNPopViewController *alertController))handler {
     self.handler = handler;
+}
+
+- (void)eventForDismissCompletionBlock:(DNPopViewControllerDismissEventBlock)dismissCompletionBlock {
+    self.dismissCompletionBlock = dismissCompletionBlock;
 }
 
 #pragma mark - Private Methods

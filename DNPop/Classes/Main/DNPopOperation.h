@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, DNPopOperationQueuePriority) {
 /** fromViewController */
 @property (nonatomic, weak) UIViewController *fromViewController;
 /** toViewController */
-@property (nonatomic, strong) DNPopViewController *toViewController;
+@property (nonatomic, weak) DNPopViewController *toViewController;
 //优先级
 @property (nonatomic, assign) DNPopOperationQueuePriority priority;
 @property (readonly, getter=isExecuting) BOOL executing;
