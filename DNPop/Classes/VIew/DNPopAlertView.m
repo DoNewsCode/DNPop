@@ -54,7 +54,7 @@
     }
     
     if (self.message) {
-        CGSize messageSize =  [self.messageLabel.text boundingRectWithSize:CGSizeMake(maxWidth - 2 * self.alertStyle.horizontalSpacing, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.messageLabel.font} context:nil].size;
+        CGSize messageSize =  [self.messageLabel.text boundingRectWithSize:CGSizeMake(maxWidth - self.alertStyle.headerEdge.left - self.alertStyle.headerEdge.right, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.messageLabel.font} context:nil].size;
         self.messageLabel.frame = (CGRect){self.alertStyle.headerEdge.left,previousItemMaxY,maxWidth - self.alertStyle.headerEdge.left - self.alertStyle.headerEdge.right,ceilf(messageSize.height)};
         previousItemMaxY += (self.messageLabel.frame.size.height + self.alertStyle.headerEdge.bottom);
     } else {
