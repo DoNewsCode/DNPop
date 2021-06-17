@@ -124,7 +124,7 @@
         DNPopAction *action = self.alertActions.firstObject;
         UIView *item = action.item;
         CGFloat actionHeight = item.frame.size.height;
-        CGFloat actionWidth = (maxWidth - self.alertStyle.horizontalSpacing * 2 - (self.alertStyle.dividingLineHeight + 1) * (self.alertActions.count - 1)) / self.alertActions.count;
+        CGFloat actionWidth = floorf((maxWidth - self.alertStyle.horizontalSpacing * 2 - (self.alertStyle.dividingLineHeight + 1) * (self.alertActions.count - 1)) / self.alertActions.count);
         CGFloat actionX = self.alertStyle.horizontalSpacing;
         for (NSInteger i = 0; i < self.alertActions.count; i++) {
             
